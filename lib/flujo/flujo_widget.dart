@@ -67,7 +67,7 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 10,
-                          color: FlutterFlowTheme.darkBG,
+                          color: FlutterFlowTheme.of(context).darkBG,
                           offset: Offset(1, 1),
                         )
                       ],
@@ -99,13 +99,16 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                                       20, 0, 0, 0),
                                   child: Text(
                                     'Flujo de Aprobación',
-                                    style: FlutterFlowTheme.bodyText1.override(
-                                      fontFamily: 'Avenir',
-                                      color: FlutterFlowTheme.darkBG,
-                                      fontSize: 25,
-                                      fontWeight: FontWeight.w600,
-                                      useGoogleFonts: false,
-                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Avenir',
+                                          color: FlutterFlowTheme.of(context)
+                                              .darkBG,
+                                          fontSize: 25,
+                                          fontWeight: FontWeight.w600,
+                                          useGoogleFonts: false,
+                                        ),
                                   ),
                                 ),
                               ],
@@ -120,11 +123,13 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                                 Expanded(
                                   child: Text(
                                     'Tarea',
-                                    style: FlutterFlowTheme.bodyText1.override(
-                                      fontFamily: 'Avenir',
-                                      fontWeight: FontWeight.bold,
-                                      useGoogleFonts: false,
-                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Avenir',
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                        ),
                                   ),
                                 ),
                                 Padding(
@@ -162,12 +167,13 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                                     },
                                     child: Text(
                                       '23 Jun 2021   14:00',
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                   ),
                                 ),
@@ -200,7 +206,8 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                                         borderRadius: BorderRadius.circular(15),
                                       ),
                                     ),
-                                    style: FlutterFlowTheme.bodyText1,
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyText1,
                                   ),
                                 ),
                               ),
@@ -219,12 +226,13 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                                             20, 10, 0, 0),
                                         child: Text(
                                           'Costo',
-                                          style: FlutterFlowTheme.bodyText1
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
                                               .override(
-                                            fontFamily: 'Avenir',
-                                            fontWeight: FontWeight.bold,
-                                            useGoogleFonts: false,
-                                          ),
+                                                fontFamily: 'Avenir',
+                                                fontWeight: FontWeight.bold,
+                                                useGoogleFonts: false,
+                                              ),
                                         ),
                                       ),
                                     ),
@@ -234,12 +242,13 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                                             0, 10, 20, 0),
                                         child: Text(
                                           'Responsable',
-                                          style: FlutterFlowTheme.bodyText1
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
                                               .override(
-                                            fontFamily: 'Avenir',
-                                            fontWeight: FontWeight.bold,
-                                            useGoogleFonts: false,
-                                          ),
+                                                fontFamily: 'Avenir',
+                                                fontWeight: FontWeight.bold,
+                                                useGoogleFonts: false,
+                                              ),
                                         ),
                                       ),
                                     ),
@@ -274,7 +283,8 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                                         borderRadius: BorderRadius.circular(15),
                                       ),
                                     ),
-                                    style: FlutterFlowTheme.bodyText1,
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyText1,
                                   ),
                                 ),
                               ),
@@ -301,7 +311,8 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                                         borderRadius: BorderRadius.circular(15),
                                       ),
                                     ),
-                                    style: FlutterFlowTheme.bodyText1,
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyText1,
                                   ),
                                 ),
                               ),
@@ -318,12 +329,13 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                                         20, 10, 0, 0),
                                     child: Text(
                                       'Descripción del Plan',
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        fontWeight: FontWeight.bold,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            fontWeight: FontWeight.bold,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                   ),
                                 ],
@@ -356,11 +368,13 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                                         borderRadius: BorderRadius.circular(15),
                                       ),
                                     ),
-                                    style: FlutterFlowTheme.bodyText1.override(
-                                      fontFamily: 'Avenir',
-                                      useGoogleFonts: false,
-                                      lineHeight: 8,
-                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Avenir',
+                                          useGoogleFonts: false,
+                                          lineHeight: 8,
+                                        ),
                                     keyboardType: TextInputType.multiline,
                                   ),
                                 ),
@@ -378,12 +392,13 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                                         20, 10, 0, 0),
                                     child: Text(
                                       'Comentarios y Notas',
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        fontWeight: FontWeight.bold,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            fontWeight: FontWeight.bold,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                   ),
                                 ],
@@ -427,7 +442,8 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                                         borderRadius: BorderRadius.circular(15),
                                       ),
                                     ),
-                                    style: FlutterFlowTheme.bodyText1,
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyText1,
                                     keyboardType: TextInputType.datetime,
                                   ),
                                 ),
@@ -451,7 +467,7 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 10,
-                            color: FlutterFlowTheme.darkBG,
+                            color: FlutterFlowTheme.of(context).darkBG,
                             offset: Offset(1, 1),
                           )
                         ],
@@ -478,27 +494,33 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                                       lineWidth: 12,
                                       animation: true,
                                       progressColor:
-                                          FlutterFlowTheme.primaryColor,
+                                          FlutterFlowTheme.of(context)
+                                              .primaryColor,
                                       backgroundColor: Color(0xFFF1F4F8),
                                       center: Text(
                                         '50%',
-                                        style:
-                                            FlutterFlowTheme.bodyText1.override(
-                                          fontFamily: 'Avenir',
-                                          color: FlutterFlowTheme.primaryColor,
-                                          useGoogleFonts: false,
-                                        ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily: 'Avenir',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              useGoogleFonts: false,
+                                            ),
                                       ),
                                     ),
                                   ),
                                   Text(
                                     'Progreso',
                                     textAlign: TextAlign.center,
-                                    style: FlutterFlowTheme.bodyText1.override(
-                                      fontFamily: 'Avenir',
-                                      fontSize: 18,
-                                      useGoogleFonts: false,
-                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Avenir',
+                                          fontSize: 18,
+                                          useGoogleFonts: false,
+                                        ),
                                   ),
                                 ],
                               ),
@@ -515,13 +537,13 @@ class _FlujoWidgetState extends State<FlujoWidget> {
                     padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
                     child: Text(
                       'Personas Asignadas',
-                      style: FlutterFlowTheme.bodyText1.override(
-                        fontFamily: 'Avenir',
-                        color: FlutterFlowTheme.white,
-                        fontSize: 22,
-                        fontWeight: FontWeight.w600,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                            fontFamily: 'Avenir',
+                            color: FlutterFlowTheme.of(context).white,
+                            fontSize: 22,
+                            fontWeight: FontWeight.w600,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                 ),

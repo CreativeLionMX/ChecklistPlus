@@ -66,10 +66,10 @@ class _PlandeaccionWidgetState extends State<PlandeaccionWidget> {
                     maxHeight: 400,
                   ),
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.white,
+                    color: FlutterFlowTheme.of(context).white,
                     boxShadow: [
                       BoxShadow(
-                        color: FlutterFlowTheme.darkBG,
+                        color: FlutterFlowTheme.of(context).darkBG,
                       )
                     ],
                     borderRadius: BorderRadius.circular(30),
@@ -101,11 +101,13 @@ class _PlandeaccionWidgetState extends State<PlandeaccionWidget> {
                                   EdgeInsetsDirectional.fromSTEB(0, 40, 0, 0),
                               child: Text(
                                 'Registro de plan de acción',
-                                style: FlutterFlowTheme.title3.override(
-                                  fontFamily: 'Avenir',
-                                  fontSize: 24,
-                                  useGoogleFonts: false,
-                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .title3
+                                    .override(
+                                      fontFamily: 'Avenir',
+                                      fontSize: 24,
+                                      useGoogleFonts: false,
+                                    ),
                               ),
                             ),
                           ),
@@ -119,19 +121,23 @@ class _PlandeaccionWidgetState extends State<PlandeaccionWidget> {
                                 obscureText: false,
                                 decoration: InputDecoration(
                                   labelText: 'Descripción',
-                                  labelStyle:
-                                      FlutterFlowTheme.bodyText1.override(
-                                    fontFamily: 'Avenir',
-                                    color: FlutterFlowTheme.iconGray,
-                                    useGoogleFonts: false,
-                                  ),
+                                  labelStyle: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Avenir',
+                                        color: FlutterFlowTheme.of(context)
+                                            .iconGray,
+                                        useGoogleFonts: false,
+                                      ),
                                   hintText: 'Text here...',
-                                  hintStyle:
-                                      FlutterFlowTheme.bodyText1.override(
-                                    fontFamily: 'Avenir',
-                                    color: FlutterFlowTheme.iconGray,
-                                    useGoogleFonts: false,
-                                  ),
+                                  hintStyle: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Avenir',
+                                        color: FlutterFlowTheme.of(context)
+                                            .iconGray,
+                                        useGoogleFonts: false,
+                                      ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: Color(0xFF7D2FFA),
@@ -147,14 +153,16 @@ class _PlandeaccionWidgetState extends State<PlandeaccionWidget> {
                                     borderRadius: BorderRadius.circular(15),
                                   ),
                                   filled: true,
-                                  fillColor: FlutterFlowTheme.white,
+                                  fillColor: FlutterFlowTheme.of(context).white,
                                   contentPadding:
                                       EdgeInsetsDirectional.fromSTEB(
                                           20, 20, 0, 20),
                                 ),
-                                style: FlutterFlowTheme.subtitle2.override(
-                                  fontFamily: 'Nunito',
-                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .subtitle2
+                                    .override(
+                                      fontFamily: 'Nunito',
+                                    ),
                                 maxLines: 7,
                                 keyboardType: TextInputType.multiline,
                               ),
@@ -170,19 +178,23 @@ class _PlandeaccionWidgetState extends State<PlandeaccionWidget> {
                                 obscureText: false,
                                 decoration: InputDecoration(
                                   labelText: 'Tarea',
-                                  labelStyle:
-                                      FlutterFlowTheme.bodyText1.override(
-                                    fontFamily: 'Avenir',
-                                    color: FlutterFlowTheme.iconGray,
-                                    useGoogleFonts: false,
-                                  ),
+                                  labelStyle: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Avenir',
+                                        color: FlutterFlowTheme.of(context)
+                                            .iconGray,
+                                        useGoogleFonts: false,
+                                      ),
                                   hintText: 'Text here...',
-                                  hintStyle:
-                                      FlutterFlowTheme.bodyText1.override(
-                                    fontFamily: 'Avenir',
-                                    color: FlutterFlowTheme.iconGray,
-                                    useGoogleFonts: false,
-                                  ),
+                                  hintStyle: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Avenir',
+                                        color: FlutterFlowTheme.of(context)
+                                            .iconGray,
+                                        useGoogleFonts: false,
+                                      ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: Color(0xFF7D2FFA),
@@ -198,14 +210,16 @@ class _PlandeaccionWidgetState extends State<PlandeaccionWidget> {
                                     borderRadius: BorderRadius.circular(15),
                                   ),
                                   filled: true,
-                                  fillColor: FlutterFlowTheme.white,
+                                  fillColor: FlutterFlowTheme.of(context).white,
                                   contentPadding:
                                       EdgeInsetsDirectional.fromSTEB(
                                           20, 20, 0, 20),
                                 ),
-                                style: FlutterFlowTheme.subtitle2.override(
-                                  fontFamily: 'Nunito',
-                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .subtitle2
+                                    .override(
+                                      fontFamily: 'Nunito',
+                                    ),
                               ),
                             ),
                           ),

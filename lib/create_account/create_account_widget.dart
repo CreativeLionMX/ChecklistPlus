@@ -90,7 +90,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                               },
                               child: Icon(
                                 Icons.arrow_back_rounded,
-                                color: FlutterFlowTheme.white,
+                                color: FlutterFlowTheme.of(context).white,
                                 size: 32,
                               ),
                             ),
@@ -100,11 +100,14 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                                 child: AutoSizeText(
                                   'Crea tu Cuenta',
-                                  style: FlutterFlowTheme.title1.override(
-                                    fontFamily: 'Avenir',
-                                    color: FlutterFlowTheme.white,
-                                    useGoogleFonts: false,
-                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .title1
+                                      .override(
+                                        fontFamily: 'Avenir',
+                                        color:
+                                            FlutterFlowTheme.of(context).white,
+                                        useGoogleFonts: false,
+                                      ),
                                 ),
                               ),
                             ),
@@ -117,11 +120,12 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                           child: Text(
                             'Crea tu usuario y contraseña',
-                            style: FlutterFlowTheme.bodyText1.override(
-                              fontFamily: 'Avenir',
-                              color: FlutterFlowTheme.white,
-                              useGoogleFonts: false,
-                            ),
+                            style:
+                                FlutterFlowTheme.of(context).bodyText1.override(
+                                      fontFamily: 'Avenir',
+                                      color: FlutterFlowTheme.of(context).white,
+                                      useGoogleFonts: false,
+                                    ),
                           ),
                         ),
                       ),
@@ -131,11 +135,12 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
                           child: Text(
                             'Usuario',
-                            style: FlutterFlowTheme.bodyText1.override(
-                              fontFamily: 'Avenir',
-                              color: FlutterFlowTheme.white,
-                              useGoogleFonts: false,
-                            ),
+                            style:
+                                FlutterFlowTheme.of(context).bodyText1.override(
+                                      fontFamily: 'Avenir',
+                                      color: FlutterFlowTheme.of(context).white,
+                                      useGoogleFonts: false,
+                                    ),
                           ),
                         ),
                       ),
@@ -151,19 +156,21 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                 obscureText: false,
                                 decoration: InputDecoration(
                                   labelText: 'Correo Electrónico',
-                                  labelStyle:
-                                      FlutterFlowTheme.bodyText1.override(
-                                    fontFamily: 'Avenir',
-                                    color: Color(0xFF95A1AC),
-                                    useGoogleFonts: false,
-                                  ),
+                                  labelStyle: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Avenir',
+                                        color: Color(0xFF95A1AC),
+                                        useGoogleFonts: false,
+                                      ),
                                   hintText: 'Enter your email here...',
-                                  hintStyle:
-                                      FlutterFlowTheme.bodyText1.override(
-                                    fontFamily: 'Avenir',
-                                    color: Color(0xFF95A1AC),
-                                    useGoogleFonts: false,
-                                  ),
+                                  hintStyle: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Avenir',
+                                        color: Color(0xFF95A1AC),
+                                        useGoogleFonts: false,
+                                      ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: Color(0xFFDBE2E7),
@@ -179,16 +186,18 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     borderRadius: BorderRadius.circular(12),
                                   ),
                                   filled: true,
-                                  fillColor: FlutterFlowTheme.white,
+                                  fillColor: FlutterFlowTheme.of(context).white,
                                   contentPadding:
                                       EdgeInsetsDirectional.fromSTEB(
                                           16, 24, 0, 24),
                                 ),
-                                style: FlutterFlowTheme.bodyText1.override(
-                                  fontFamily: 'Avenir',
-                                  color: Color(0xFF2B343A),
-                                  useGoogleFonts: false,
-                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Avenir',
+                                      color: Color(0xFF2B343A),
+                                      useGoogleFonts: false,
+                                    ),
                               ),
                             ),
                           ],
@@ -200,11 +209,12 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                           child: Text(
                             'Contraseña',
-                            style: FlutterFlowTheme.bodyText1.override(
-                              fontFamily: 'Avenir',
-                              color: FlutterFlowTheme.white,
-                              useGoogleFonts: false,
-                            ),
+                            style:
+                                FlutterFlowTheme.of(context).bodyText1.override(
+                                      fontFamily: 'Avenir',
+                                      color: FlutterFlowTheme.of(context).white,
+                                      useGoogleFonts: false,
+                                    ),
                           ),
                         ),
                       ),
@@ -220,19 +230,21 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                 obscureText: !passwordVisibility,
                                 decoration: InputDecoration(
                                   labelText: 'Contraseña',
-                                  labelStyle:
-                                      FlutterFlowTheme.bodyText1.override(
-                                    fontFamily: 'Avenir',
-                                    color: Color(0xFF95A1AC),
-                                    useGoogleFonts: false,
-                                  ),
+                                  labelStyle: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Avenir',
+                                        color: Color(0xFF95A1AC),
+                                        useGoogleFonts: false,
+                                      ),
                                   hintText: 'Enter your password here...',
-                                  hintStyle:
-                                      FlutterFlowTheme.bodyText1.override(
-                                    fontFamily: 'Avenir',
-                                    color: Color(0xFF95A1AC),
-                                    useGoogleFonts: false,
-                                  ),
+                                  hintStyle: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Avenir',
+                                        color: Color(0xFF95A1AC),
+                                        useGoogleFonts: false,
+                                      ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: Color(0xFFDBE2E7),
@@ -248,7 +260,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     borderRadius: BorderRadius.circular(12),
                                   ),
                                   filled: true,
-                                  fillColor: FlutterFlowTheme.white,
+                                  fillColor: FlutterFlowTheme.of(context).white,
                                   contentPadding:
                                       EdgeInsetsDirectional.fromSTEB(
                                           16, 24, 0, 24),
@@ -266,11 +278,13 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     ),
                                   ),
                                 ),
-                                style: FlutterFlowTheme.bodyText1.override(
-                                  fontFamily: 'Avenir',
-                                  color: Color(0xFF2B343A),
-                                  useGoogleFonts: false,
-                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Avenir',
+                                      color: Color(0xFF2B343A),
+                                      useGoogleFonts: false,
+                                    ),
                               ),
                             ),
                           ],
@@ -288,19 +302,21 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                 obscureText: !passwordconfVisibility,
                                 decoration: InputDecoration(
                                   labelText: 'Confirmar Contraseña',
-                                  labelStyle:
-                                      FlutterFlowTheme.bodyText1.override(
-                                    fontFamily: 'Avenir',
-                                    color: Color(0xFF95A1AC),
-                                    useGoogleFonts: false,
-                                  ),
+                                  labelStyle: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Avenir',
+                                        color: Color(0xFF95A1AC),
+                                        useGoogleFonts: false,
+                                      ),
                                   hintText: 'Enter your password here...',
-                                  hintStyle:
-                                      FlutterFlowTheme.bodyText1.override(
-                                    fontFamily: 'Avenir',
-                                    color: Color(0xFF95A1AC),
-                                    useGoogleFonts: false,
-                                  ),
+                                  hintStyle: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Avenir',
+                                        color: Color(0xFF95A1AC),
+                                        useGoogleFonts: false,
+                                      ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: Color(0xFFDBE2E7),
@@ -316,7 +332,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     borderRadius: BorderRadius.circular(12),
                                   ),
                                   filled: true,
-                                  fillColor: FlutterFlowTheme.white,
+                                  fillColor: FlutterFlowTheme.of(context).white,
                                   contentPadding:
                                       EdgeInsetsDirectional.fromSTEB(
                                           16, 24, 0, 24),
@@ -334,11 +350,13 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     ),
                                   ),
                                 ),
-                                style: FlutterFlowTheme.bodyText1.override(
-                                  fontFamily: 'Avenir',
-                                  color: Color(0xFF2B343A),
-                                  useGoogleFonts: false,
-                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Avenir',
+                                      color: Color(0xFF2B343A),
+                                      useGoogleFonts: false,
+                                    ),
                               ),
                             ),
                           ],
@@ -380,12 +398,13 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                           options: FFButtonOptions(
                             width: double.infinity,
                             height: 70,
-                            color: FlutterFlowTheme.white,
-                            textStyle: FlutterFlowTheme.title3.override(
-                              fontFamily: 'Avenir',
-                              color: Color(0xFF5807D3),
-                              useGoogleFonts: false,
-                            ),
+                            color: FlutterFlowTheme.of(context).white,
+                            textStyle:
+                                FlutterFlowTheme.of(context).title3.override(
+                                      fontFamily: 'Avenir',
+                                      color: Color(0xFF5807D3),
+                                      useGoogleFonts: false,
+                                    ),
                             elevation: 0,
                             borderSide: BorderSide(
                               color: Colors.transparent,

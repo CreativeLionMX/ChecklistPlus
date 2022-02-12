@@ -85,12 +85,12 @@ class _IntroWidgetState extends State<IntroWidget> {
                     child: Text(
                       'Ahorra tiempo y toma \nmejores decisiones ',
                       textAlign: TextAlign.center,
-                      style: FlutterFlowTheme.bodyText1.override(
-                        fontFamily: 'Avenir',
-                        fontSize: 18,
-                        fontWeight: FontWeight.normal,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                            fontFamily: 'Avenir',
+                            fontSize: 18,
+                            fontWeight: FontWeight.normal,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                   Padding(
@@ -108,13 +108,14 @@ class _IntroWidgetState extends State<IntroWidget> {
                       options: FFButtonOptions(
                         width: 200,
                         height: 60,
-                        color: FlutterFlowTheme.primaryColor,
-                        textStyle: FlutterFlowTheme.subtitle2.override(
-                          fontFamily: 'Avenir',
-                          color: Colors.white,
-                          fontSize: 20,
-                          useGoogleFonts: false,
-                        ),
+                        color: FlutterFlowTheme.of(context).primaryColor,
+                        textStyle:
+                            FlutterFlowTheme.of(context).subtitle2.override(
+                                  fontFamily: 'Avenir',
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  useGoogleFonts: false,
+                                ),
                         borderSide: BorderSide(
                           color: Colors.transparent,
                           width: 1,

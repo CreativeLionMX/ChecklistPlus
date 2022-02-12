@@ -95,11 +95,11 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                       },
                       child: Text(
                         'Mi Perfil',
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          fontSize: 16,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              fontSize: 16,
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ),
@@ -107,11 +107,11 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                     padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 10),
                     child: Text(
                       'Agendar Checks',
-                      style: FlutterFlowTheme.title3.override(
-                        fontFamily: 'Avenir',
-                        fontSize: 16,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).title3.override(
+                            fontFamily: 'Avenir',
+                            fontSize: 16,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                   Padding(
@@ -127,11 +127,11 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                       },
                       child: Text(
                         'Autorizar Tarea',
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          fontSize: 16,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              fontSize: 16,
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ),
@@ -148,11 +148,11 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                       },
                       child: Text(
                         'Crear Tarea',
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          fontSize: 16,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              fontSize: 16,
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ),
@@ -160,23 +160,23 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                     padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 30),
                     child: Text(
                       'Cash+',
-                      style: FlutterFlowTheme.title3.override(
-                        fontFamily: 'Avenir',
-                        fontSize: 16,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).title3.override(
+                            fontFamily: 'Avenir',
+                            fontSize: 16,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                   Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 10),
                     child: Text(
                       'NOTIFICACIONES',
-                      style: FlutterFlowTheme.title3.override(
-                        fontFamily: 'Avenir',
-                        color: Color(0xFF5603DB),
-                        fontSize: 16,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).title3.override(
+                            fontFamily: 'Avenir',
+                            color: Color(0xFF5603DB),
+                            fontSize: 16,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                 ],
@@ -198,15 +198,15 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                           setState(() => switchListTileValue1 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -218,15 +218,15 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                           setState(() => switchListTileValue2 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -238,15 +238,15 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                           setState(() => switchListTileValue3 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -258,15 +258,15 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                           setState(() => switchListTileValue4 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -278,15 +278,15 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                           setState(() => switchListTileValue5 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -298,15 +298,15 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                           setState(() => switchListTileValue6 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -318,15 +318,15 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                           setState(() => switchListTileValue7 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -435,12 +435,14 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                                         0, 20, 0, 0),
                                     child: Text(
                                       'Estándares Operativos',
-                                      style: FlutterFlowTheme.title1.override(
-                                        fontFamily: 'Avenir',
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.normal,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .title1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.normal,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                   ),
                                 ],
@@ -479,12 +481,13 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                                                   5, 0, 20, 0),
                                           child: Text(
                                             '17 May 2021.  14:00',
-                                            style: FlutterFlowTheme.bodyText1
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Colors.white,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Colors.white,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                       ],
@@ -599,7 +602,7 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                       child: Text(
                         'Finalizar y Enviar Check',
                         textAlign: TextAlign.start,
-                        style: FlutterFlowTheme.title3,
+                        style: FlutterFlowTheme.of(context).title3,
                       ),
                     ),
                     InkWell(
@@ -617,11 +620,11 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                       child: Text(
                         '4/4',
                         textAlign: TextAlign.start,
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          color: Color(0xFF7D2FFA),
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              color: Color(0xFF7D2FFA),
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ],
@@ -689,16 +692,19 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                                             children: [
                                               Text(
                                                 'Responsable del Checklist',
-                                                style: FlutterFlowTheme
-                                                    .bodyText1
-                                                    .override(
-                                                  fontFamily: 'Avenir',
-                                                  color:
-                                                      FlutterFlowTheme.darkBG,
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.w600,
-                                                  useGoogleFonts: false,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Avenir',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .darkBG,
+                                                          fontSize: 18,
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          useGoogleFonts: false,
+                                                        ),
                                               ),
                                             ],
                                           ),
@@ -737,7 +743,8 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                                                               15),
                                                     ),
                                                   ),
-                                                  style: FlutterFlowTheme
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
                                                       .bodyText1,
                                                 ),
                                               ),
@@ -778,7 +785,8 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                                                               15),
                                                     ),
                                                   ),
-                                                  style: FlutterFlowTheme
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
                                                       .bodyText1,
                                                 ),
                                               ),
@@ -796,14 +804,15 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                                                       .fromSTEB(20, 10, 0, 0),
                                                   child: Text(
                                                     'Comentarios Adicionales',
-                                                    style: FlutterFlowTheme
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
                                                         .bodyText1
                                                         .override(
-                                                      fontFamily: 'Avenir',
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      useGoogleFonts: false,
-                                                    ),
+                                                          fontFamily: 'Avenir',
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          useGoogleFonts: false,
+                                                        ),
                                                   ),
                                                 ),
                                               ],
@@ -844,13 +853,14 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                                                               15),
                                                     ),
                                                   ),
-                                                  style: FlutterFlowTheme
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
                                                       .bodyText1
                                                       .override(
-                                                    fontFamily: 'Avenir',
-                                                    useGoogleFonts: false,
-                                                    lineHeight: 8,
-                                                  ),
+                                                        fontFamily: 'Avenir',
+                                                        useGoogleFonts: false,
+                                                        lineHeight: 8,
+                                                      ),
                                                   keyboardType:
                                                       TextInputType.multiline,
                                                 ),
@@ -869,14 +879,15 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                                                       .fromSTEB(20, 10, 0, 0),
                                                   child: Text(
                                                     'Firma',
-                                                    style: FlutterFlowTheme
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
                                                         .bodyText1
                                                         .override(
-                                                      fontFamily: 'Avenir',
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      useGoogleFonts: false,
-                                                    ),
+                                                          fontFamily: 'Avenir',
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          useGoogleFonts: false,
+                                                        ),
                                                   ),
                                                 ),
                                               ],
@@ -932,13 +943,14 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                                                               15),
                                                     ),
                                                   ),
-                                                  style: FlutterFlowTheme
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
                                                       .bodyText1
                                                       .override(
-                                                    fontFamily: 'Avenir',
-                                                    useGoogleFonts: false,
-                                                    lineHeight: 20,
-                                                  ),
+                                                        fontFamily: 'Avenir',
+                                                        useGoogleFonts: false,
+                                                        lineHeight: 20,
+                                                      ),
                                                   keyboardType:
                                                       TextInputType.multiline,
                                                 ),
@@ -1013,12 +1025,14 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                                                   -0.89, -0.6),
                                               child: Text(
                                                 'Enviar',
-                                                style: FlutterFlowTheme
-                                                    .bodyText1
-                                                    .override(
-                                                  fontFamily: 'Nunito',
-                                                  color: Color(0xFFFDFDFD),
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Nunito',
+                                                          color:
+                                                              Color(0xFFFDFDFD),
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -1036,7 +1050,9 @@ class _FirmaCheckWidgetState extends State<FirmaCheckWidget> {
                                                   -0.67, 0.53),
                                               child: Icon(
                                                 Icons.check_circle_outlined,
-                                                color: FlutterFlowTheme.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .white,
                                                 size: 24,
                                               ),
                                             ),

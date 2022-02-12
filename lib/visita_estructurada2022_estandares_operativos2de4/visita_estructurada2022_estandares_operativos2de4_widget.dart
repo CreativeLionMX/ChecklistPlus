@@ -55,17 +55,17 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
               padding: EdgeInsetsDirectional.fromSTEB(0, 0, 5, 0),
               child: Text(
                 'Tarea',
-                style: FlutterFlowTheme.bodyText1.override(
-                  fontFamily: 'Avenir',
-                  color: FlutterFlowTheme.white,
-                  fontWeight: FontWeight.w500,
-                  useGoogleFonts: false,
-                ),
+                style: FlutterFlowTheme.of(context).bodyText1.override(
+                      fontFamily: 'Avenir',
+                      color: FlutterFlowTheme.of(context).white,
+                      fontWeight: FontWeight.w500,
+                      useGoogleFonts: false,
+                    ),
               ),
             ),
             Icon(
               Icons.add_circle,
-              color: FlutterFlowTheme.white,
+              color: FlutterFlowTheme.of(context).white,
               size: 24,
             ),
           ],
@@ -120,11 +120,11 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                       },
                       child: Text(
                         'Mi Perfil',
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          fontSize: 16,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              fontSize: 16,
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ),
@@ -132,11 +132,11 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                     padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 10),
                     child: Text(
                       'Agendar Checks',
-                      style: FlutterFlowTheme.title3.override(
-                        fontFamily: 'Avenir',
-                        fontSize: 16,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).title3.override(
+                            fontFamily: 'Avenir',
+                            fontSize: 16,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                   Padding(
@@ -152,11 +152,11 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                       },
                       child: Text(
                         'Autorizar Tarea',
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          fontSize: 16,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              fontSize: 16,
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ),
@@ -173,11 +173,11 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                       },
                       child: Text(
                         'Crear Tarea',
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          fontSize: 16,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              fontSize: 16,
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ),
@@ -185,23 +185,23 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                     padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 30),
                     child: Text(
                       'Cash+',
-                      style: FlutterFlowTheme.title3.override(
-                        fontFamily: 'Avenir',
-                        fontSize: 16,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).title3.override(
+                            fontFamily: 'Avenir',
+                            fontSize: 16,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                   Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 10),
                     child: Text(
                       'NOTIFICACIONES',
-                      style: FlutterFlowTheme.title3.override(
-                        fontFamily: 'Avenir',
-                        color: Color(0xFF5603DB),
-                        fontSize: 16,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).title3.override(
+                            fontFamily: 'Avenir',
+                            color: Color(0xFF5603DB),
+                            fontSize: 16,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                 ],
@@ -223,15 +223,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                           setState(() => switchListTileValue1 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -243,15 +243,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                           setState(() => switchListTileValue2 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -263,15 +263,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                           setState(() => switchListTileValue3 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -283,15 +283,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                           setState(() => switchListTileValue4 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -303,15 +303,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                           setState(() => switchListTileValue5 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -323,15 +323,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                           setState(() => switchListTileValue6 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -343,15 +343,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                           setState(() => switchListTileValue7 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -476,13 +476,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                             0, 20, 0, 0),
                                         child: Text(
                                           'Estándares Operativos',
-                                          style:
-                                              FlutterFlowTheme.title1.override(
-                                            fontFamily: 'Avenir',
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.normal,
-                                            useGoogleFonts: false,
-                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .title1
+                                              .override(
+                                                fontFamily: 'Avenir',
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.normal,
+                                                useGoogleFonts: false,
+                                              ),
                                         ),
                                       ),
                                     ],
@@ -519,13 +520,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                   .fromSTEB(5, 0, 20, 0),
                                               child: Text(
                                                 '17 May 2021.  14:00',
-                                                style: FlutterFlowTheme
-                                                    .bodyText1
-                                                    .override(
-                                                  fontFamily: 'Avenir',
-                                                  color: Colors.white,
-                                                  useGoogleFonts: false,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Avenir',
+                                                          color: Colors.white,
+                                                          useGoogleFonts: false,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -632,7 +634,7 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                       child: Text(
                         'Procesos Administrativos',
                         textAlign: TextAlign.start,
-                        style: FlutterFlowTheme.title3,
+                        style: FlutterFlowTheme.of(context).title3,
                       ),
                     ),
                     InkWell(
@@ -650,11 +652,11 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                       child: Text(
                         '2/4',
                         textAlign: TextAlign.start,
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          color: Color(0xFF7D2FFA),
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              color: Color(0xFF7D2FFA),
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                     InkWell(
@@ -731,13 +733,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                     Text(
                                       'Administración de personal',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -745,7 +749,8 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                       child: Text(
                                         '• Portar uniforme oficial: En buen estado,limpio, no arrugado (Todo el personal cuenta con uniforme, si no,solicitarlo).\n• Imagen del Personal: Hombres Cabello Corto, Mujeres Cabello Recogido, Jeans en buen estado (No rotos), Mantener BuenaPresentación en General.\n• Bodega, área de empleados, baños (si hay) limpios y en orden.\n• Platica con un integrante del equipo (ambiente, condiciones,horarios, conocer a la persona).\n• Cuenta con Tarjeta de vales, Tarjeta de Beneficios.\n• Revisión de vacaciones pendientes.\n• Revisión de capacitación de personal (cursos pendientes, dudasde cursos, temas a reforzar).',
                                         textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.bodyText1,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
                                       ),
                                     ),
                                     Padding(
@@ -764,15 +769,17 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -789,14 +796,16 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -857,11 +866,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -869,11 +881,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -881,11 +896,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -903,7 +921,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -912,7 +932,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -921,7 +943,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -970,13 +994,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                     Text(
                                       'Arqueo de caja.',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -984,7 +1010,8 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                       child: Text(
                                         '• Realizar arqueo de caja.\n• Documentar desviaciones.\n• Solicitar la cuenta por cobrar en caso de existir desviaciones.',
                                         textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.bodyText1,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
                                       ),
                                     ),
                                     Padding(
@@ -1003,15 +1030,17 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1028,14 +1057,16 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1096,11 +1127,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1108,11 +1142,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1120,11 +1157,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -1142,7 +1182,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1151,7 +1193,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1160,7 +1204,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1209,13 +1255,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                     Text(
                                       'Revisar Incidencias de cortes',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -1223,7 +1271,8 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                       child: Text(
                                         '• Revisar en el archivo de incidencias decortes de la última visita a la fecha, si la tienda tuvo alguna.\n• Si la tienda tuvo incidencia por faltante de dinero revisar qué es lo que pasó con ese dinero.\n• Si la tienda tuvo incidencia que no es de faltante, capacitar,retroalimentar o tomar acciones en caso de ser reincidente',
                                         textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.bodyText1,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
                                       ),
                                     ),
                                     Padding(
@@ -1242,15 +1291,17 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1267,14 +1318,16 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1335,11 +1388,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1347,11 +1403,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1359,11 +1418,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -1381,7 +1443,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1390,7 +1454,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1399,7 +1465,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1448,13 +1516,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                     Text(
                                       'Revisar el corte de ventas y deposito bancario.',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -1462,7 +1532,8 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                       child: Text(
                                         '• Documentación de ventas completa y enviada a contabilidad a través del intranet sin atrasos (Fichas dedeposito y Reporte de terminales con vouchers de las ventas vs declarado, y en caso de existir Formato de contingencia Ventas de contado, Formato de contingencia de Abonos, Formato decontingencia de Enganches).\n• Horario máximo de envío 13:00 pm.\n• Sin diferencias en el deposito bancario.\n• Realizar depositos parciales a partir de 5 mil pesos.',
                                         textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.bodyText1,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
                                       ),
                                     ),
                                     Padding(
@@ -1481,15 +1552,17 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1506,14 +1579,16 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1574,11 +1649,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1586,11 +1664,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1598,11 +1679,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -1620,7 +1704,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1629,7 +1715,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1638,7 +1726,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1687,13 +1777,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                     Text(
                                       'Transferencias pendientes en transito.',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -1701,7 +1793,8 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                       child: Text(
                                         '• Revisar las transferencias pendientes, noexisten pendientes de más de 3 días.',
                                         textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.bodyText1,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
                                       ),
                                     ),
                                     Padding(
@@ -1720,15 +1813,17 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1745,14 +1840,16 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1813,11 +1910,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1825,11 +1925,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1837,11 +1940,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -1859,7 +1965,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1868,7 +1976,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1877,7 +1987,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1926,13 +2038,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                     Text(
                                       'Realizar pre inventario.',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -1940,7 +2054,8 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                       child: Text(
                                         '• Realizar inventario de 8 equipos (Top 20 de ventas de la sucursal) y 2 accesorios (Top 20 de ventas).\n• Documentar diferencias.\n• Solicitar cuenta por cobrar al área de auditoria.',
                                         textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.bodyText1,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
                                       ),
                                     ),
                                     Padding(
@@ -1959,15 +2074,17 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1984,14 +2101,16 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -2052,11 +2171,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -2064,11 +2186,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -2076,11 +2201,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -2098,7 +2226,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -2107,7 +2237,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -2116,7 +2248,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -2165,13 +2299,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                     Text(
                                       'Revisión de proceso de originación.',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -2179,7 +2315,8 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                       child: Text(
                                         '• Revisar aleatoriamente 1 activación de crédito que se realice durante la visita, que se cumplan con los siguientes criterios.\n\nINE\n•Validar que la firma de la INE vs contrato coincida.\n•No sea una copia\n•Esté vigente\n•Que pertenezca al cliente\n\nFOTOS INTRANET\n•Clientes sin cubrebocas/rostro cubierto\n•Que sea del cliente\n•No sea de algún articulo, no sea del vendedor o tapen la cámara.\n•Que el cliente este en la sucursal\n•Documentación completa\n\nTELEFONO CLIENTE\n•Que sea del cliente\n•Que este activo (Que exista y enlace)\n•Que corresponda al titular\n•Firma del contrato coincida con la INE',
                                         textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.bodyText1,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
                                       ),
                                     ),
                                     Padding(
@@ -2198,15 +2335,17 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -2223,14 +2362,16 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -2291,11 +2432,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -2303,11 +2447,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -2315,11 +2462,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -2337,7 +2487,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -2346,7 +2498,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -2355,7 +2509,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -2404,13 +2560,15 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                     Text(
                                       'Merma.',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -2418,7 +2576,8 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                       child: Text(
                                         '• Validar Exhibición no existe producto no apto para venta y si hay retirarlo y enlistar como merma.\n• Revisión de bodega detectando si hay producto considerado como merma y enlistar para regreso al almacén de merma.\n• Revisar el acumulado del mes y validar que no se pase del monto permitido de lo contrario pasar la cuenta por cobrar.',
                                         textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.bodyText1,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
                                       ),
                                     ),
                                     Padding(
@@ -2437,15 +2596,17 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -2462,14 +2623,16 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -2530,11 +2693,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -2542,11 +2708,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -2554,11 +2723,14 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -2576,7 +2748,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -2585,7 +2759,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -2594,7 +2770,9 @@ class _VisitaEstructurada2022EstandaresOperativos2de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),

@@ -1,63 +1,87 @@
+// ignore_for_file: overridden_fields, annotate_overrides
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-// ignore: avoid_classes_with_only_static_members
-class FlutterFlowTheme {
-  static const Color primaryColor = Color(0xFF7D2FFA);
-  static const Color secondaryColor = Color(0xFF262D34);
-  static const Color tertiaryColor = Color(0xFF39D2C0);
+abstract class FlutterFlowTheme {
+  static FlutterFlowTheme of(BuildContext context) => LightModeTheme();
 
-  static const Color white = Color(0xFFFFFFFF);
-  static const Color iconGray = Color(0xFF8B97A2);
-  static const Color grayDark = Color(0xFF57636C);
-  static const Color darkBG = Color(0xFF111417);
-  static const Color background = Color(0xFFF1F4F8);
-  static const Color grayLines = Color(0xFFDBE2E7);
+  Color primaryColor;
+  Color secondaryColor;
+  Color tertiaryColor;
+  Color alternate;
+  Color primaryBackground;
+  Color secondaryBackground;
+  Color primaryText;
+  Color secondaryText;
 
-  String primaryFontFamily = 'Poppins';
-  String secondaryFontFamily = 'Roboto';
-  static TextStyle get title1 => TextStyle(
+  Color white;
+  Color iconGray;
+  Color grayDark;
+  Color darkBG;
+  Color background;
+  Color grayLines;
+
+  TextStyle get title1 => TextStyle(
         fontFamily: 'Avenir',
         color: darkBG,
         fontWeight: FontWeight.bold,
         fontSize: 30,
       );
-  static TextStyle get title2 => TextStyle(
+  TextStyle get title2 => TextStyle(
         fontFamily: 'Avenir',
         color: darkBG,
         fontWeight: FontWeight.bold,
         fontSize: 24,
       );
-  static TextStyle get title3 => TextStyle(
+  TextStyle get title3 => TextStyle(
         fontFamily: 'Avenir',
         color: darkBG,
         fontWeight: FontWeight.w600,
         fontSize: 20,
       );
-  static TextStyle get subtitle1 => TextStyle(
+  TextStyle get subtitle1 => TextStyle(
         fontFamily: 'Avenir',
         color: primaryColor,
         fontWeight: FontWeight.w500,
         fontSize: 18,
       );
-  static TextStyle get subtitle2 => TextStyle(
+  TextStyle get subtitle2 => TextStyle(
         fontFamily: 'Avenir',
         color: darkBG,
         fontWeight: FontWeight.normal,
         fontSize: 16,
       );
-  static TextStyle get bodyText1 => TextStyle(
+  TextStyle get bodyText1 => TextStyle(
         fontFamily: 'Avenir',
         color: grayDark,
         fontWeight: FontWeight.normal,
         fontSize: 14,
       );
-  static TextStyle get bodyText2 => TextStyle(
+  TextStyle get bodyText2 => TextStyle(
         fontFamily: 'Avenir',
         color: darkBG,
         fontWeight: FontWeight.normal,
         fontSize: 14,
       );
+}
+
+class LightModeTheme extends FlutterFlowTheme {
+  Color primaryColor = const Color(0xFF7D2FFA);
+  Color secondaryColor = const Color(0xFF262D34);
+  Color tertiaryColor = const Color(0xFF39D2C0);
+  Color alternate = const Color(0x00000000);
+  Color primaryBackground = const Color(0x00000000);
+  Color secondaryBackground = const Color(0x00000000);
+  Color primaryText = const Color(0x00000000);
+  Color secondaryText = const Color(0x00000000);
+
+  Color white = Color(0xFFFFFFFF);
+  Color iconGray = Color(0xFF8B97A2);
+  Color grayDark = Color(0xFF57636C);
+  Color darkBG = Color(0xFF111417);
+  Color background = Color(0xFFF1F4F8);
+  Color grayLines = Color(0xFFDBE2E7);
 }
 
 extension TextStyleHelper on TextStyle {

@@ -47,19 +47,19 @@ class _AjustesWidgetState extends State<AjustesWidget> {
           },
           child: Icon(
             Icons.arrow_back_ios_rounded,
-            color: FlutterFlowTheme.white,
+            color: FlutterFlowTheme.of(context).white,
             size: 24,
           ),
         ),
         title: Text(
           'Mi Perfil',
-          style: FlutterFlowTheme.title1.override(
-            fontFamily: 'Avenir',
-            color: FlutterFlowTheme.white,
-            fontSize: 28,
-            fontWeight: FontWeight.normal,
-            useGoogleFonts: false,
-          ),
+          style: FlutterFlowTheme.of(context).title1.override(
+                fontFamily: 'Avenir',
+                color: FlutterFlowTheme.of(context).white,
+                fontSize: 28,
+                fontWeight: FontWeight.normal,
+                useGoogleFonts: false,
+              ),
         ),
         actions: [],
         centerTitle: false,
@@ -102,11 +102,11 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(20, 0, 0, 30),
                 child: Text(
                   'Ajustes de Notificaciones',
-                  style: FlutterFlowTheme.title3.override(
-                    fontFamily: 'Avenir',
-                    fontSize: 16,
-                    useGoogleFonts: false,
-                  ),
+                  style: FlutterFlowTheme.of(context).title3.override(
+                        fontFamily: 'Avenir',
+                        fontSize: 16,
+                        useGoogleFonts: false,
+                      ),
                 ),
               ),
               SwitchListTile(
@@ -115,11 +115,11 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                     setState(() => switchListTileValue2 = newValue),
                 title: Text(
                   'Notificacion',
-                  style: FlutterFlowTheme.subtitle1,
+                  style: FlutterFlowTheme.of(context).subtitle1,
                 ),
                 subtitle: Text(
                   'Descripción',
-                  style: FlutterFlowTheme.bodyText1,
+                  style: FlutterFlowTheme.of(context).bodyText1,
                 ),
                 tileColor: Color(0xFFF5F5F5),
                 dense: false,
@@ -131,11 +131,11 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                     setState(() => switchListTileValue3 = newValue),
                 title: Text(
                   'Notificacion',
-                  style: FlutterFlowTheme.subtitle1,
+                  style: FlutterFlowTheme.of(context).subtitle1,
                 ),
                 subtitle: Text(
                   'Descripción',
-                  style: FlutterFlowTheme.bodyText1,
+                  style: FlutterFlowTheme.of(context).bodyText1,
                 ),
                 tileColor: Color(0xFFF5F5F5),
                 dense: false,
@@ -147,11 +147,11 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                     setState(() => switchListTileValue4 = newValue),
                 title: Text(
                   'Notificacion',
-                  style: FlutterFlowTheme.subtitle1,
+                  style: FlutterFlowTheme.of(context).subtitle1,
                 ),
                 subtitle: Text(
                   'Descripción',
-                  style: FlutterFlowTheme.bodyText1,
+                  style: FlutterFlowTheme.of(context).bodyText1,
                 ),
                 tileColor: Color(0xFFF5F5F5),
                 dense: false,
@@ -163,11 +163,11 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                     setState(() => switchListTileValue5 = newValue),
                 title: Text(
                   'Notificacion',
-                  style: FlutterFlowTheme.subtitle1,
+                  style: FlutterFlowTheme.of(context).subtitle1,
                 ),
                 subtitle: Text(
                   'Descripción',
-                  style: FlutterFlowTheme.bodyText1,
+                  style: FlutterFlowTheme.of(context).bodyText1,
                 ),
                 tileColor: Color(0xFFF5F5F5),
                 dense: false,
@@ -179,11 +179,11 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                     setState(() => switchListTileValue6 = newValue),
                 title: Text(
                   'Notificacion',
-                  style: FlutterFlowTheme.subtitle1,
+                  style: FlutterFlowTheme.of(context).subtitle1,
                 ),
                 subtitle: Text(
                   'Descripción',
-                  style: FlutterFlowTheme.bodyText1,
+                  style: FlutterFlowTheme.of(context).bodyText1,
                 ),
                 tileColor: Color(0xFFF5F5F5),
                 dense: false,
@@ -195,11 +195,11 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                     setState(() => switchListTileValue7 = newValue),
                 title: Text(
                   'Notificacion',
-                  style: FlutterFlowTheme.subtitle1,
+                  style: FlutterFlowTheme.of(context).subtitle1,
                 ),
                 subtitle: Text(
                   'Descripción',
-                  style: FlutterFlowTheme.bodyText1,
+                  style: FlutterFlowTheme.of(context).bodyText1,
                 ),
                 tileColor: Color(0xFFF5F5F5),
                 dense: false,
@@ -211,11 +211,11 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                     setState(() => switchListTileValue8 = newValue),
                 title: Text(
                   'Notificacion',
-                  style: FlutterFlowTheme.subtitle1,
+                  style: FlutterFlowTheme.of(context).subtitle1,
                 ),
                 subtitle: Text(
                   'Descripción',
-                  style: FlutterFlowTheme.bodyText1,
+                  style: FlutterFlowTheme.of(context).bodyText1,
                 ),
                 tileColor: Color(0xFFF5F5F5),
                 dense: false,
@@ -336,13 +336,14 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                   decoration: InputDecoration(
                                     labelText: 'Your Nam',
                                     hintText: 'What do people call you...?',
-                                    hintStyle:
-                                        FlutterFlowTheme.bodyText1.override(
-                                      fontFamily: 'Lexend Deca',
-                                      color: Color(0xFF8B97A2),
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal,
-                                    ),
+                                    hintStyle: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF8B97A2),
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.normal,
+                                        ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0xFF5603DB),
@@ -358,13 +359,15 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                   ),
-                                  style: FlutterFlowTheme.bodyText1.override(
-                                    fontFamily: 'Avenir',
-                                    color: Color(0xFF090F13),
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w500,
-                                    useGoogleFonts: false,
-                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Avenir',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w500,
+                                        useGoogleFonts: false,
+                                      ),
                                 ),
                               ),
                             ),
@@ -383,13 +386,14 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                 decoration: InputDecoration(
                                   labelText: 'Email Address',
                                   hintText: 'Enter a new email',
-                                  hintStyle:
-                                      FlutterFlowTheme.bodyText1.override(
-                                    fontFamily: 'Lexend Deca',
-                                    color: Color(0xFF8B97A2),
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.normal,
-                                  ),
+                                  hintStyle: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF8B97A2),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: Color(0xFF5603DB),
@@ -405,13 +409,15 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                 ),
-                                style: FlutterFlowTheme.bodyText1.override(
-                                  fontFamily: 'Avenir',
-                                  color: Color(0xFF090F13),
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w500,
-                                  useGoogleFonts: false,
-                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Avenir',
+                                      color: Color(0xFF090F13),
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w500,
+                                      useGoogleFonts: false,
+                                    ),
                               ),
                             ),
                           ],
@@ -423,22 +429,24 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                             setState(() => switchListTileValue1 = newValue),
                         title: Text(
                           'Recibir Notificaciones',
-                          style: FlutterFlowTheme.subtitle2.override(
-                            fontFamily: 'Avenir',
-                            color: Color(0xFF151B1E),
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                            useGoogleFonts: false,
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).subtitle2.override(
+                                    fontFamily: 'Avenir',
+                                    color: Color(0xFF151B1E),
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w500,
+                                    useGoogleFonts: false,
+                                  ),
                         ),
                         subtitle: Text(
                           'Habilitar Notificaciones.',
-                          style: FlutterFlowTheme.bodyText2.override(
-                            fontFamily: 'Lexend Deca',
-                            color: Color(0xFF8B97A2),
-                            fontSize: 14,
-                            fontWeight: FontWeight.normal,
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).bodyText2.override(
+                                    fontFamily: 'Lexend Deca',
+                                    color: Color(0xFF8B97A2),
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                         ),
                         tileColor: Colors.white,
                         activeColor: Color(0xFF4B39EF),
@@ -461,13 +469,15 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                 width: 230,
                                 height: 50,
                                 color: Color(0xFF5603DB),
-                                textStyle: FlutterFlowTheme.bodyText2.override(
-                                  fontFamily: 'Avenir',
-                                  color: Colors.white,
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.normal,
-                                  useGoogleFonts: false,
-                                ),
+                                textStyle: FlutterFlowTheme.of(context)
+                                    .bodyText2
+                                    .override(
+                                      fontFamily: 'Avenir',
+                                      color: Colors.white,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.normal,
+                                      useGoogleFonts: false,
+                                    ),
                                 elevation: 3,
                                 borderSide: BorderSide(
                                   color: Colors.transparent,

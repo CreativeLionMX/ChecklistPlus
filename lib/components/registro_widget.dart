@@ -50,10 +50,10 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                     maxHeight: 400,
                   ),
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.white,
+                    color: FlutterFlowTheme.of(context).white,
                     boxShadow: [
                       BoxShadow(
-                        color: FlutterFlowTheme.darkBG,
+                        color: FlutterFlowTheme.of(context).darkBG,
                       )
                     ],
                     borderRadius: BorderRadius.circular(30),
@@ -76,11 +76,11 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                         child: Text(
                           'Registro Añadido Exitosamente',
                           textAlign: TextAlign.center,
-                          style: FlutterFlowTheme.title3.override(
-                            fontFamily: 'Avenir',
-                            fontSize: 28,
-                            useGoogleFonts: false,
-                          ),
+                          style: FlutterFlowTheme.of(context).title3.override(
+                                fontFamily: 'Avenir',
+                                fontSize: 28,
+                                useGoogleFonts: false,
+                              ),
                         ),
                       ),
                       Align(

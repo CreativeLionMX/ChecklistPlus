@@ -52,17 +52,17 @@ class _CheckListOnboarding3de4WidgetState
               padding: EdgeInsetsDirectional.fromSTEB(0, 0, 5, 0),
               child: Text(
                 'Tarea',
-                style: FlutterFlowTheme.bodyText1.override(
-                  fontFamily: 'Avenir',
-                  color: FlutterFlowTheme.white,
-                  fontWeight: FontWeight.w500,
-                  useGoogleFonts: false,
-                ),
+                style: FlutterFlowTheme.of(context).bodyText1.override(
+                      fontFamily: 'Avenir',
+                      color: FlutterFlowTheme.of(context).white,
+                      fontWeight: FontWeight.w500,
+                      useGoogleFonts: false,
+                    ),
               ),
             ),
             Icon(
               Icons.add_circle,
-              color: FlutterFlowTheme.white,
+              color: FlutterFlowTheme.of(context).white,
               size: 24,
             ),
           ],
@@ -117,11 +117,11 @@ class _CheckListOnboarding3de4WidgetState
                       },
                       child: Text(
                         'Mi Perfil',
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          fontSize: 16,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              fontSize: 16,
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ),
@@ -129,11 +129,11 @@ class _CheckListOnboarding3de4WidgetState
                     padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 10),
                     child: Text(
                       'Agendar Checks',
-                      style: FlutterFlowTheme.title3.override(
-                        fontFamily: 'Avenir',
-                        fontSize: 16,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).title3.override(
+                            fontFamily: 'Avenir',
+                            fontSize: 16,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                   Padding(
@@ -149,11 +149,11 @@ class _CheckListOnboarding3de4WidgetState
                       },
                       child: Text(
                         'Autorizar Tarea',
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          fontSize: 16,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              fontSize: 16,
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ),
@@ -170,11 +170,11 @@ class _CheckListOnboarding3de4WidgetState
                       },
                       child: Text(
                         'Crear Tarea',
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          fontSize: 16,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              fontSize: 16,
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ),
@@ -182,23 +182,23 @@ class _CheckListOnboarding3de4WidgetState
                     padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 30),
                     child: Text(
                       'Cash+',
-                      style: FlutterFlowTheme.title3.override(
-                        fontFamily: 'Avenir',
-                        fontSize: 16,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).title3.override(
+                            fontFamily: 'Avenir',
+                            fontSize: 16,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                   Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 10),
                     child: Text(
                       'NOTIFICACIONES',
-                      style: FlutterFlowTheme.title3.override(
-                        fontFamily: 'Avenir',
-                        color: Color(0xFF5603DB),
-                        fontSize: 16,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).title3.override(
+                            fontFamily: 'Avenir',
+                            color: Color(0xFF5603DB),
+                            fontSize: 16,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                 ],
@@ -220,15 +220,15 @@ class _CheckListOnboarding3de4WidgetState
                           setState(() => switchListTileValue1 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -240,15 +240,15 @@ class _CheckListOnboarding3de4WidgetState
                           setState(() => switchListTileValue2 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -260,15 +260,15 @@ class _CheckListOnboarding3de4WidgetState
                           setState(() => switchListTileValue3 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -280,15 +280,15 @@ class _CheckListOnboarding3de4WidgetState
                           setState(() => switchListTileValue4 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -300,15 +300,15 @@ class _CheckListOnboarding3de4WidgetState
                           setState(() => switchListTileValue5 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -320,15 +320,15 @@ class _CheckListOnboarding3de4WidgetState
                           setState(() => switchListTileValue6 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -340,15 +340,15 @@ class _CheckListOnboarding3de4WidgetState
                           setState(() => switchListTileValue7 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -457,12 +457,14 @@ class _CheckListOnboarding3de4WidgetState
                                         0, 20, 0, 0),
                                     child: Text(
                                       'CheckList Onboarding',
-                                      style: FlutterFlowTheme.title1.override(
-                                        fontFamily: 'Avenir',
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.normal,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .title1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.normal,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                   ),
                                 ],
@@ -501,12 +503,13 @@ class _CheckListOnboarding3de4WidgetState
                                                   5, 0, 20, 0),
                                           child: Text(
                                             '17 May 2021.  14:00',
-                                            style: FlutterFlowTheme.bodyText1
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Colors.white,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Colors.white,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                       ],
@@ -621,7 +624,7 @@ class _CheckListOnboarding3de4WidgetState
                       child: Text(
                         'Onboarding Día 3-6',
                         textAlign: TextAlign.start,
-                        style: FlutterFlowTheme.title3,
+                        style: FlutterFlowTheme.of(context).title3,
                       ),
                     ),
                     InkWell(
@@ -639,11 +642,11 @@ class _CheckListOnboarding3de4WidgetState
                       child: Text(
                         '3/4',
                         textAlign: TextAlign.start,
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          color: Color(0xFF7D2FFA),
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              color: Color(0xFF7D2FFA),
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                     InkWell(
@@ -720,13 +723,15 @@ class _CheckListOnboarding3de4WidgetState
                                     Text(
                                       'Aplicación de Evaluación de Sistemas en UM',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -744,15 +749,17 @@ class _CheckListOnboarding3de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -769,14 +776,16 @@ class _CheckListOnboarding3de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -837,11 +846,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -849,11 +861,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -861,11 +876,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -883,7 +901,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -892,7 +912,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -901,7 +923,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -950,13 +974,15 @@ class _CheckListOnboarding3de4WidgetState
                                     Text(
                                       'Reforzamiento de Sistemas',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -974,15 +1000,17 @@ class _CheckListOnboarding3de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -999,14 +1027,16 @@ class _CheckListOnboarding3de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1067,11 +1097,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1079,11 +1112,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1091,11 +1127,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -1113,7 +1152,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1122,7 +1163,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1131,7 +1174,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1180,13 +1225,15 @@ class _CheckListOnboarding3de4WidgetState
                                     Text(
                                       'Aplicación de Evaluación de Macropay en UM',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -1204,15 +1251,17 @@ class _CheckListOnboarding3de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1229,14 +1278,16 @@ class _CheckListOnboarding3de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1297,11 +1348,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1309,11 +1363,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1321,11 +1378,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -1343,7 +1403,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1352,7 +1414,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1361,7 +1425,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1410,13 +1476,15 @@ class _CheckListOnboarding3de4WidgetState
                                     Text(
                                       'Reforzamiento de Macropay en UM',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -1434,15 +1502,17 @@ class _CheckListOnboarding3de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1459,14 +1529,16 @@ class _CheckListOnboarding3de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1527,11 +1599,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1539,11 +1614,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1551,11 +1629,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -1573,7 +1654,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1582,7 +1665,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1591,7 +1676,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1640,13 +1727,15 @@ class _CheckListOnboarding3de4WidgetState
                                     Text(
                                       'Aplicación de Evaluación de Modelo de Servicio ENN',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -1664,15 +1753,17 @@ class _CheckListOnboarding3de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1689,14 +1780,16 @@ class _CheckListOnboarding3de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1757,11 +1850,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1769,11 +1865,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1781,11 +1880,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -1803,7 +1905,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1812,7 +1916,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1821,7 +1927,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -1870,13 +1978,15 @@ class _CheckListOnboarding3de4WidgetState
                                     Text(
                                       'Reforzamiento de Modelo de Servicio ENN',
                                       textAlign: TextAlign.center,
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        color: FlutterFlowTheme.darkBG,
-                                        fontWeight: FontWeight.w600,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: FlutterFlowTheme.of(context)
+                                                .darkBG,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -1894,15 +2004,17 @@ class _CheckListOnboarding3de4WidgetState
                                             options: FFButtonOptions(
                                               width: 130,
                                               height: 40,
-                                              color: FlutterFlowTheme
-                                                  .tertiaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .tertiaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1919,14 +2031,16 @@ class _CheckListOnboarding3de4WidgetState
                                               width: 130,
                                               height: 40,
                                               color:
-                                                  FlutterFlowTheme.primaryColor,
-                                              textStyle: FlutterFlowTheme
-                                                  .subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                useGoogleFonts: false,
-                                              ),
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        useGoogleFonts: false,
+                                                      ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
                                                 width: 1,
@@ -1987,11 +2101,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 -0.89, -0.6),
                                             child: Text(
                                               'Plan de Acción',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -1999,11 +2116,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.06, -0.6),
                                             child: Text(
                                               'Multimedia',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -2011,11 +2131,14 @@ class _CheckListOnboarding3de4WidgetState
                                                 AlignmentDirectional(0.9, -0.6),
                                             child: Text(
                                               'Comentarios',
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Nunito',
-                                                color: Color(0xFFFDFDFD),
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Nunito',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -2033,7 +2156,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 -0.67, 0.53),
                                             child: Icon(
                                               Icons.check_circle_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -2042,7 +2167,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.05, 0.44),
                                             child: Icon(
                                               Icons.perm_media_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),
@@ -2051,7 +2178,9 @@ class _CheckListOnboarding3de4WidgetState
                                                 0.76, 0.48),
                                             child: Icon(
                                               Icons.insert_comment_outlined,
-                                              color: FlutterFlowTheme.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                               size: 24,
                                             ),
                                           ),

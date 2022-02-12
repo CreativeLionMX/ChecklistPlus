@@ -56,35 +56,37 @@ class _ListaTareasWidgetState extends State<ListaTareasWidget> {
                       children: [
                         Text(
                           'Project Name',
-                          style: FlutterFlowTheme.title2.override(
-                            fontFamily: 'Lexend Deca',
-                            color: Color(0xFF090F13),
-                            fontSize: 22,
-                            fontWeight: FontWeight.w500,
-                          ),
+                          style: FlutterFlowTheme.of(context).title2.override(
+                                fontFamily: 'Lexend Deca',
+                                color: Color(0xFF090F13),
+                                fontSize: 22,
+                                fontWeight: FontWeight.w500,
+                              ),
                         ),
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
                           child: Text(
                             '• Portar uniforme oficial: En buen estado,limpio, no arrugado (Todo el personal cuenta con uniforme, si no,solicitarlo).\n• Imagen del Personal: Hombres Cabello Corto, Mujeres CabelloRecogido, Jeans en buen estado (No rotos), Mantener BuenaPresentaci n en General.\n• Bodega,  rea de empleados, ba os (si hay) limpios y en orden.\n• Platica con un integrante del equipo (ambiente, condiciones,horarios, conocer a la persona).\n• Cuenta con Tarjeta de vales, Tarjeta de Beneficios.\n• Revisi n de vacaciones pendientes.',
-                            style: FlutterFlowTheme.bodyText2.override(
-                              fontFamily: 'Lexend Deca',
-                              color: Color(0xFF090F13),
-                              fontSize: 14,
-                              fontWeight: FontWeight.normal,
-                            ),
+                            style:
+                                FlutterFlowTheme.of(context).bodyText2.override(
+                                      fontFamily: 'Lexend Deca',
+                                      color: Color(0xFF090F13),
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.normal,
+                                    ),
                           ),
                         ),
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
                           child: Text(
                             '3 upcoming due dates',
-                            style: FlutterFlowTheme.bodyText1.override(
-                              fontFamily: 'Lexend Deca',
-                              color: Color(0xFF4B39EF),
-                              fontSize: 14,
-                              fontWeight: FontWeight.normal,
-                            ),
+                            style:
+                                FlutterFlowTheme.of(context).bodyText1.override(
+                                      fontFamily: 'Lexend Deca',
+                                      color: Color(0xFF4B39EF),
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.normal,
+                                    ),
                           ),
                         ),
                       ],
@@ -132,35 +134,37 @@ class _ListaTareasWidgetState extends State<ListaTareasWidget> {
                     children: [
                       Text(
                         'Project Name',
-                        style: FlutterFlowTheme.title2.override(
-                          fontFamily: 'Lexend Deca',
-                          color: Color(0xFF090F13),
-                          fontSize: 22,
-                          fontWeight: FontWeight.w500,
-                        ),
+                        style: FlutterFlowTheme.of(context).title2.override(
+                              fontFamily: 'Lexend Deca',
+                              color: Color(0xFF090F13),
+                              fontSize: 22,
+                              fontWeight: FontWeight.w500,
+                            ),
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
                         child: Text(
                           '4 Folders',
-                          style: FlutterFlowTheme.bodyText2.override(
-                            fontFamily: 'Lexend Deca',
-                            color: Color(0xFF090F13),
-                            fontSize: 14,
-                            fontWeight: FontWeight.normal,
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).bodyText2.override(
+                                    fontFamily: 'Lexend Deca',
+                                    color: Color(0xFF090F13),
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
                         child: Text(
                           '3 upcoming due dates',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Lexend Deca',
-                            color: Color(0xFF39D2C0),
-                            fontSize: 14,
-                            fontWeight: FontWeight.normal,
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).bodyText1.override(
+                                    fontFamily: 'Lexend Deca',
+                                    color: Color(0xFF39D2C0),
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                         ),
                       ),
                     ],
@@ -207,35 +211,37 @@ class _ListaTareasWidgetState extends State<ListaTareasWidget> {
                     children: [
                       Text(
                         'Project Name',
-                        style: FlutterFlowTheme.title2.override(
-                          fontFamily: 'Lexend Deca',
-                          color: Color(0xFF090F13),
-                          fontSize: 22,
-                          fontWeight: FontWeight.w500,
-                        ),
+                        style: FlutterFlowTheme.of(context).title2.override(
+                              fontFamily: 'Lexend Deca',
+                              color: Color(0xFF090F13),
+                              fontSize: 22,
+                              fontWeight: FontWeight.w500,
+                            ),
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
                         child: Text(
                           '4 Folders',
-                          style: FlutterFlowTheme.bodyText2.override(
-                            fontFamily: 'Lexend Deca',
-                            color: Color(0xFF090F13),
-                            fontSize: 14,
-                            fontWeight: FontWeight.normal,
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).bodyText2.override(
+                                    fontFamily: 'Lexend Deca',
+                                    color: Color(0xFF090F13),
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
                         child: Text(
                           '3 upcoming due dates',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Lexend Deca',
-                            color: Color(0xFF39D2C0),
-                            fontSize: 14,
-                            fontWeight: FontWeight.normal,
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).bodyText1.override(
+                                    fontFamily: 'Lexend Deca',
+                                    color: Color(0xFF39D2C0),
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                         ),
                       ),
                     ],

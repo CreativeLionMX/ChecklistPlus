@@ -63,7 +63,7 @@ class _TareaWidgetState extends State<TareaWidget> {
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 10,
-                          color: FlutterFlowTheme.darkBG,
+                          color: FlutterFlowTheme.of(context).darkBG,
                           offset: Offset(1, 1),
                         )
                       ],
@@ -95,13 +95,16 @@ class _TareaWidgetState extends State<TareaWidget> {
                                       20, 0, 0, 0),
                                   child: Text(
                                     'Tarea ',
-                                    style: FlutterFlowTheme.bodyText1.override(
-                                      fontFamily: 'Avenir',
-                                      color: FlutterFlowTheme.darkBG,
-                                      fontSize: 28,
-                                      fontWeight: FontWeight.w600,
-                                      useGoogleFonts: false,
-                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Avenir',
+                                          color: FlutterFlowTheme.of(context)
+                                              .darkBG,
+                                          fontSize: 28,
+                                          fontWeight: FontWeight.w600,
+                                          useGoogleFonts: false,
+                                        ),
                                   ),
                                 ),
                               ],
@@ -115,11 +118,13 @@ class _TareaWidgetState extends State<TareaWidget> {
                               children: [
                                 Text(
                                   'Sucursal',
-                                  style: FlutterFlowTheme.bodyText1.override(
-                                    fontFamily: 'Avenir',
-                                    fontWeight: FontWeight.bold,
-                                    useGoogleFonts: false,
-                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: 'Avenir',
+                                        fontWeight: FontWeight.bold,
+                                        useGoogleFonts: false,
+                                      ),
                                 ),
                               ],
                             ),
@@ -138,16 +143,18 @@ class _TareaWidgetState extends State<TareaWidget> {
                                         setState(() => dropDownValue1 = val),
                                     width: 180,
                                     height: 50,
-                                    textStyle:
-                                        FlutterFlowTheme.bodyText1.override(
-                                      fontFamily: 'Avenir',
-                                      color: Colors.black,
-                                      useGoogleFonts: false,
-                                    ),
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Avenir',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                        ),
                                     hintText: 'Selecciona...',
                                     fillColor: Colors.white,
                                     elevation: 2,
-                                    borderColor: FlutterFlowTheme.primaryColor,
+                                    borderColor: FlutterFlowTheme.of(context)
+                                        .primaryColor,
                                     borderWidth: 2,
                                     borderRadius: 12,
                                     margin: EdgeInsetsDirectional.fromSTEB(
@@ -171,12 +178,13 @@ class _TareaWidgetState extends State<TareaWidget> {
                                             20, 10, 0, 0),
                                         child: Text(
                                           'División',
-                                          style: FlutterFlowTheme.bodyText1
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
                                               .override(
-                                            fontFamily: 'Avenir',
-                                            fontWeight: FontWeight.bold,
-                                            useGoogleFonts: false,
-                                          ),
+                                                fontFamily: 'Avenir',
+                                                fontWeight: FontWeight.bold,
+                                                useGoogleFonts: false,
+                                              ),
                                         ),
                                       ),
                                     ),
@@ -186,12 +194,13 @@ class _TareaWidgetState extends State<TareaWidget> {
                                             0, 10, 20, 0),
                                         child: Text(
                                           'Zona',
-                                          style: FlutterFlowTheme.bodyText1
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
                                               .override(
-                                            fontFamily: 'Avenir',
-                                            fontWeight: FontWeight.bold,
-                                            useGoogleFonts: false,
-                                          ),
+                                                fontFamily: 'Avenir',
+                                                fontWeight: FontWeight.bold,
+                                                useGoogleFonts: false,
+                                              ),
                                         ),
                                       ),
                                     ),
@@ -214,16 +223,18 @@ class _TareaWidgetState extends State<TareaWidget> {
                                         setState(() => dropDownValue2 = val),
                                     width: 180,
                                     height: 50,
-                                    textStyle:
-                                        FlutterFlowTheme.bodyText1.override(
-                                      fontFamily: 'Avenir',
-                                      color: Colors.black,
-                                      useGoogleFonts: false,
-                                    ),
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Avenir',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                        ),
                                     hintText: 'Selecciona...',
                                     fillColor: Colors.white,
                                     elevation: 2,
-                                    borderColor: FlutterFlowTheme.primaryColor,
+                                    borderColor: FlutterFlowTheme.of(context)
+                                        .primaryColor,
                                     borderWidth: 2,
                                     borderRadius: 12,
                                     margin: EdgeInsetsDirectional.fromSTEB(
@@ -243,16 +254,18 @@ class _TareaWidgetState extends State<TareaWidget> {
                                         setState(() => dropDownValue3 = val),
                                     width: 180,
                                     height: 50,
-                                    textStyle:
-                                        FlutterFlowTheme.bodyText1.override(
-                                      fontFamily: 'Avenir',
-                                      color: Colors.black,
-                                      useGoogleFonts: false,
-                                    ),
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Avenir',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                        ),
                                     hintText: 'Selecciona...',
                                     fillColor: Colors.white,
                                     elevation: 2,
-                                    borderColor: FlutterFlowTheme.primaryColor,
+                                    borderColor: FlutterFlowTheme.of(context)
+                                        .primaryColor,
                                     borderWidth: 2,
                                     borderRadius: 12,
                                     margin: EdgeInsetsDirectional.fromSTEB(
@@ -274,12 +287,13 @@ class _TareaWidgetState extends State<TareaWidget> {
                                         20, 10, 0, 0),
                                     child: Text(
                                       'Titulo',
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        fontWeight: FontWeight.bold,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            fontWeight: FontWeight.bold,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                   ),
                                 ],
@@ -312,7 +326,8 @@ class _TareaWidgetState extends State<TareaWidget> {
                                         borderRadius: BorderRadius.circular(15),
                                       ),
                                     ),
-                                    style: FlutterFlowTheme.bodyText1,
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyText1,
                                   ),
                                 ),
                               ),
@@ -329,12 +344,13 @@ class _TareaWidgetState extends State<TareaWidget> {
                                         20, 10, 0, 0),
                                     child: Text(
                                       'Fecha y Hora',
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Avenir',
-                                        fontWeight: FontWeight.bold,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            fontWeight: FontWeight.bold,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                   ),
                                 ],
@@ -378,7 +394,8 @@ class _TareaWidgetState extends State<TareaWidget> {
                                         borderRadius: BorderRadius.circular(15),
                                       ),
                                     ),
-                                    style: FlutterFlowTheme.bodyText1,
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyText1,
                                     keyboardType: TextInputType.datetime,
                                   ),
                                 ),
@@ -402,7 +419,7 @@ class _TareaWidgetState extends State<TareaWidget> {
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 10,
-                            color: FlutterFlowTheme.darkBG,
+                            color: FlutterFlowTheme.of(context).darkBG,
                             offset: Offset(1, 1),
                           )
                         ],
@@ -429,27 +446,33 @@ class _TareaWidgetState extends State<TareaWidget> {
                                       lineWidth: 12,
                                       animation: true,
                                       progressColor:
-                                          FlutterFlowTheme.primaryColor,
+                                          FlutterFlowTheme.of(context)
+                                              .primaryColor,
                                       backgroundColor: Color(0xFFF1F4F8),
                                       center: Text(
                                         '50%',
-                                        style:
-                                            FlutterFlowTheme.bodyText1.override(
-                                          fontFamily: 'Avenir',
-                                          color: FlutterFlowTheme.primaryColor,
-                                          useGoogleFonts: false,
-                                        ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily: 'Avenir',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              useGoogleFonts: false,
+                                            ),
                                       ),
                                     ),
                                   ),
                                   Text(
                                     'Progreso',
                                     textAlign: TextAlign.center,
-                                    style: FlutterFlowTheme.bodyText1.override(
-                                      fontFamily: 'Avenir',
-                                      fontSize: 18,
-                                      useGoogleFonts: false,
-                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Avenir',
+                                          fontSize: 18,
+                                          useGoogleFonts: false,
+                                        ),
                                   ),
                                 ],
                               ),
@@ -466,13 +489,13 @@ class _TareaWidgetState extends State<TareaWidget> {
                     padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                     child: Text(
                       'Asignar',
-                      style: FlutterFlowTheme.bodyText1.override(
-                        fontFamily: 'Avenir',
-                        color: FlutterFlowTheme.white,
-                        fontSize: 22,
-                        fontWeight: FontWeight.w600,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                            fontFamily: 'Avenir',
+                            color: FlutterFlowTheme.of(context).white,
+                            fontSize: 22,
+                            fontWeight: FontWeight.w600,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                 ),

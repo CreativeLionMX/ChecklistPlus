@@ -76,11 +76,11 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(20, 0, 0, 30),
                   child: Text(
                     'Ajustes de Notificaciones',
-                    style: FlutterFlowTheme.title3.override(
-                      fontFamily: 'Avenir',
-                      fontSize: 16,
-                      useGoogleFonts: false,
-                    ),
+                    style: FlutterFlowTheme.of(context).title3.override(
+                          fontFamily: 'Avenir',
+                          fontSize: 16,
+                          useGoogleFonts: false,
+                        ),
                   ),
                 ),
                 SwitchListTile(
@@ -89,11 +89,11 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                       setState(() => switchListTileValue1 = newValue),
                   title: Text(
                     'Notificacion',
-                    style: FlutterFlowTheme.subtitle1,
+                    style: FlutterFlowTheme.of(context).subtitle1,
                   ),
                   subtitle: Text(
                     'Descripción',
-                    style: FlutterFlowTheme.bodyText1,
+                    style: FlutterFlowTheme.of(context).bodyText1,
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
@@ -105,11 +105,11 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                       setState(() => switchListTileValue2 = newValue),
                   title: Text(
                     'Notificacion',
-                    style: FlutterFlowTheme.subtitle1,
+                    style: FlutterFlowTheme.of(context).subtitle1,
                   ),
                   subtitle: Text(
                     'Descripción',
-                    style: FlutterFlowTheme.bodyText1,
+                    style: FlutterFlowTheme.of(context).bodyText1,
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
@@ -121,11 +121,11 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                       setState(() => switchListTileValue3 = newValue),
                   title: Text(
                     'Notificacion',
-                    style: FlutterFlowTheme.subtitle1,
+                    style: FlutterFlowTheme.of(context).subtitle1,
                   ),
                   subtitle: Text(
                     'Descripción',
-                    style: FlutterFlowTheme.bodyText1,
+                    style: FlutterFlowTheme.of(context).bodyText1,
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
@@ -137,11 +137,11 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                       setState(() => switchListTileValue4 = newValue),
                   title: Text(
                     'Notificacion',
-                    style: FlutterFlowTheme.subtitle1,
+                    style: FlutterFlowTheme.of(context).subtitle1,
                   ),
                   subtitle: Text(
                     'Descripción',
-                    style: FlutterFlowTheme.bodyText1,
+                    style: FlutterFlowTheme.of(context).bodyText1,
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
@@ -153,11 +153,11 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                       setState(() => switchListTileValue5 = newValue),
                   title: Text(
                     'Notificacion',
-                    style: FlutterFlowTheme.subtitle1,
+                    style: FlutterFlowTheme.of(context).subtitle1,
                   ),
                   subtitle: Text(
                     'Descripción',
-                    style: FlutterFlowTheme.bodyText1,
+                    style: FlutterFlowTheme.of(context).bodyText1,
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
@@ -169,11 +169,11 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                       setState(() => switchListTileValue6 = newValue),
                   title: Text(
                     'Notificacion',
-                    style: FlutterFlowTheme.subtitle1,
+                    style: FlutterFlowTheme.of(context).subtitle1,
                   ),
                   subtitle: Text(
                     'Descripción',
-                    style: FlutterFlowTheme.bodyText1,
+                    style: FlutterFlowTheme.of(context).bodyText1,
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
@@ -185,11 +185,11 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                       setState(() => switchListTileValue7 = newValue),
                   title: Text(
                     'Notificacion',
-                    style: FlutterFlowTheme.subtitle1,
+                    style: FlutterFlowTheme.of(context).subtitle1,
                   ),
                   subtitle: Text(
                     'Descripción',
-                    style: FlutterFlowTheme.bodyText1,
+                    style: FlutterFlowTheme.of(context).bodyText1,
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
@@ -285,12 +285,12 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                         child: Text(
                           'Hola',
-                          style: FlutterFlowTheme.title2.override(
-                            fontFamily: 'Avenir',
-                            color: Colors.white,
-                            fontWeight: FontWeight.normal,
-                            useGoogleFonts: false,
-                          ),
+                          style: FlutterFlowTheme.of(context).title2.override(
+                                fontFamily: 'Avenir',
+                                color: Colors.white,
+                                fontWeight: FontWeight.normal,
+                                useGoogleFonts: false,
+                              ),
                         ),
                       ),
                     ],
@@ -299,13 +299,13 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                     padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                     child: Text(
                       '[Username]',
-                      style: FlutterFlowTheme.title1.override(
-                        fontFamily: 'Avenir',
-                        color: Colors.white,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).title1.override(
+                            fontFamily: 'Avenir',
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                   Padding(
@@ -350,13 +350,15 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                     ),
                                   ),
                                 ),
-                                style: FlutterFlowTheme.bodyText2.override(
-                                  fontFamily: 'Avenir',
-                                  color: Color(0xFF1A1F24),
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.normal,
-                                  useGoogleFonts: false,
-                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyText2
+                                    .override(
+                                      fontFamily: 'Avenir',
+                                      color: Color(0xFF1A1F24),
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.normal,
+                                      useGoogleFonts: false,
+                                    ),
                               ),
                             ),
                           ),
@@ -392,13 +394,13 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 1),
                         child: AutoSizeText(
                           'Mis Checks',
-                          style: FlutterFlowTheme.title1.override(
-                            fontFamily: 'Avenir',
-                            color: Colors.white,
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            useGoogleFonts: false,
-                          ),
+                          style: FlutterFlowTheme.of(context).title1.override(
+                                fontFamily: 'Avenir',
+                                color: Colors.white,
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                                useGoogleFonts: false,
+                              ),
                         ),
                       ),
                     ),
@@ -465,12 +467,15 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                 -0.56, 0.83),
                                             child: Text(
                                               'Ver mas...',
-                                              style: FlutterFlowTheme.subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Color(0xFFFDFDFD),
-                                                useGoogleFonts: false,
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                        useGoogleFonts: false,
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -481,13 +486,16 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                   .fromSTEB(15, 0, 15, 0),
                                               child: AutoSizeText(
                                                 'Estándares Operativos',
-                                                style: FlutterFlowTheme.title2
-                                                    .override(
-                                                  fontFamily: 'Avenir',
-                                                  color: Colors.white,
-                                                  fontWeight: FontWeight.normal,
-                                                  useGoogleFonts: false,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .title2
+                                                        .override(
+                                                          fontFamily: 'Avenir',
+                                                          color: Colors.white,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                          useGoogleFonts: false,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -508,15 +516,17 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                     .fromSTEB(6, 2, 6, 2),
                                                 child: AutoSizeText(
                                                   '5 tareas pendientes',
-                                                  style: FlutterFlowTheme
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
                                                       .bodyText2
                                                       .override(
-                                                    fontFamily: 'Lexend Deca',
-                                                    color: Colors.white,
-                                                    fontSize: 14,
-                                                    fontWeight:
-                                                        FontWeight.normal,
-                                                  ),
+                                                        fontFamily:
+                                                            'Lexend Deca',
+                                                        color: Colors.white,
+                                                        fontSize: 14,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
                                                 ),
                                               ),
                                             ),
@@ -578,12 +588,15 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                 -0.56, 0.83),
                                             child: Text(
                                               'Ver mas...',
-                                              style: FlutterFlowTheme.subtitle2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Color(0xFFFDFDFD),
-                                                useGoogleFonts: false,
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color:
+                                                            Color(0xFFFDFDFD),
+                                                        useGoogleFonts: false,
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -591,13 +604,16 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                 -0.64, -0.44),
                                             child: AutoSizeText(
                                               'Check 2',
-                                              style: FlutterFlowTheme.title2
-                                                  .override(
-                                                fontFamily: 'Avenir',
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.normal,
-                                                useGoogleFonts: false,
-                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .title2
+                                                      .override(
+                                                        fontFamily: 'Avenir',
+                                                        color: Colors.white,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                        useGoogleFonts: false,
+                                                      ),
                                             ),
                                           ),
                                           Align(
@@ -617,15 +633,17 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                     .fromSTEB(6, 2, 6, 2),
                                                 child: AutoSizeText(
                                                   '5 tareas pendientes',
-                                                  style: FlutterFlowTheme
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
                                                       .bodyText2
                                                       .override(
-                                                    fontFamily: 'Lexend Deca',
-                                                    color: Colors.white,
-                                                    fontSize: 14,
-                                                    fontWeight:
-                                                        FontWeight.normal,
-                                                  ),
+                                                        fontFamily:
+                                                            'Lexend Deca',
+                                                        color: Colors.white,
+                                                        fontSize: 14,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
                                                 ),
                                               ),
                                             ),
@@ -670,12 +688,13 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                               AlignmentDirectional(-0.56, 0.83),
                                           child: Text(
                                             'Ver mas...',
-                                            style: FlutterFlowTheme.subtitle2
+                                            style: FlutterFlowTheme.of(context)
+                                                .subtitle2
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Color(0xFFFDFDFD),
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Color(0xFFFDFDFD),
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                         Align(
@@ -683,13 +702,14 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                               -0.64, -0.44),
                                           child: AutoSizeText(
                                             'Check 3',
-                                            style: FlutterFlowTheme.title2
+                                            style: FlutterFlowTheme.of(context)
+                                                .title2
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.normal,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.normal,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                         Align(
@@ -709,14 +729,17 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                   .fromSTEB(6, 2, 6, 2),
                                               child: AutoSizeText(
                                                 '5 tareas pendientes',
-                                                style: FlutterFlowTheme
-                                                    .bodyText2
-                                                    .override(
-                                                  fontFamily: 'Lexend Deca',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText2
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.white,
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -760,12 +783,13 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                               AlignmentDirectional(-0.56, 0.83),
                                           child: Text(
                                             'Ver mas...',
-                                            style: FlutterFlowTheme.subtitle2
+                                            style: FlutterFlowTheme.of(context)
+                                                .subtitle2
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Color(0xFFFDFDFD),
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Color(0xFFFDFDFD),
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                         Align(
@@ -773,13 +797,14 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                               -0.64, -0.44),
                                           child: AutoSizeText(
                                             'Check 4',
-                                            style: FlutterFlowTheme.title2
+                                            style: FlutterFlowTheme.of(context)
+                                                .title2
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.normal,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.normal,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                         Align(
@@ -799,14 +824,17 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                   .fromSTEB(6, 2, 6, 2),
                                               child: AutoSizeText(
                                                 '5 tareas pendientes',
-                                                style: FlutterFlowTheme
-                                                    .bodyText2
-                                                    .override(
-                                                  fontFamily: 'Lexend Deca',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText2
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.white,
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -863,13 +891,15 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                         AlignmentDirectional(-0.75, -0.68),
                                     child: AutoSizeText(
                                       'Check HR Operaciones',
-                                      style: FlutterFlowTheme.title2.override(
-                                        fontFamily: 'Avenir',
-                                        color: Colors.white,
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.normal,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .title2
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: Colors.white,
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.normal,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                   ),
                                 ],
@@ -895,14 +925,15 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                             6, 2, 6, 2),
                                         child: AutoSizeText(
                                           'Visitas a Tiendas HR Operaciones',
-                                          style: FlutterFlowTheme.bodyText2
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText2
                                               .override(
-                                            fontFamily: 'Avenir',
-                                            color: Colors.white,
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.normal,
-                                            useGoogleFonts: false,
-                                          ),
+                                                fontFamily: 'Avenir',
+                                                color: Colors.white,
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.normal,
+                                                useGoogleFonts: false,
+                                              ),
                                         ),
                                       ),
                                     ),
@@ -935,15 +966,19 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                   .fromSTEB(30, 10, 10, 10),
                                               child: AutoSizeText(
                                                 'Ver Check',
-                                                style: FlutterFlowTheme
+                                                style: FlutterFlowTheme.of(
+                                                        context)
                                                     .bodyText2
                                                     .override(
-                                                  fontFamily: 'Montserrat',
-                                                  color:
-                                                      FlutterFlowTheme.darkBG,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                ),
+                                                      fontFamily: 'Montserrat',
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .darkBG,
+                                                      fontSize: 14,
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
                                               ),
                                             ),
                                             Padding(
@@ -1000,13 +1035,15 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                         AlignmentDirectional(-0.75, -0.68),
                                     child: AutoSizeText(
                                       'Check HR Operaciones',
-                                      style: FlutterFlowTheme.title2.override(
-                                        fontFamily: 'Avenir',
-                                        color: Colors.white,
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.normal,
-                                        useGoogleFonts: false,
-                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .title2
+                                          .override(
+                                            fontFamily: 'Avenir',
+                                            color: Colors.white,
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.normal,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
                                   ),
                                 ],
@@ -1032,14 +1069,15 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                             6, 2, 6, 2),
                                         child: AutoSizeText(
                                           'Visitas a Tiendas HR Operaciones',
-                                          style: FlutterFlowTheme.bodyText2
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText2
                                               .override(
-                                            fontFamily: 'Avenir',
-                                            color: Colors.white,
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.normal,
-                                            useGoogleFonts: false,
-                                          ),
+                                                fontFamily: 'Avenir',
+                                                color: Colors.white,
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.normal,
+                                                useGoogleFonts: false,
+                                              ),
                                         ),
                                       ),
                                     ),
@@ -1072,15 +1110,19 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                   .fromSTEB(30, 10, 10, 10),
                                               child: AutoSizeText(
                                                 'Ver Check',
-                                                style: FlutterFlowTheme
+                                                style: FlutterFlowTheme.of(
+                                                        context)
                                                     .bodyText2
                                                     .override(
-                                                  fontFamily: 'Montserrat',
-                                                  color:
-                                                      FlutterFlowTheme.darkBG,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                ),
+                                                      fontFamily: 'Montserrat',
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .darkBG,
+                                                      fontSize: 14,
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
                                               ),
                                             ),
                                             Padding(

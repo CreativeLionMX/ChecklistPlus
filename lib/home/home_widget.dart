@@ -4,6 +4,7 @@ import '../flujo/flujo_widget.dart';
 import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
+import '../intro/intro_widget.dart';
 import '../perfil/perfil_widget.dart';
 import '../tarea/tarea_widget.dart';
 import '../visita_estructurada2022_estandares_operativos1de4/visita_estructurada2022_estandares_operativos1de4_widget.dart';
@@ -91,11 +92,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                       },
                       child: Text(
                         'Mi Perfil',
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          fontSize: 16,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              fontSize: 16,
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ),
@@ -103,11 +104,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                     padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 10),
                     child: Text(
                       'Agendar Checks',
-                      style: FlutterFlowTheme.title3.override(
-                        fontFamily: 'Avenir',
-                        fontSize: 16,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).title3.override(
+                            fontFamily: 'Avenir',
+                            fontSize: 16,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                   Padding(
@@ -123,11 +124,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                       },
                       child: Text(
                         'Autorizar Tarea',
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          fontSize: 16,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              fontSize: 16,
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ),
@@ -144,11 +145,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                       },
                       child: Text(
                         'Crear Tarea',
-                        style: FlutterFlowTheme.title3.override(
-                          fontFamily: 'Avenir',
-                          fontSize: 16,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title3.override(
+                              fontFamily: 'Avenir',
+                              fontSize: 16,
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ),
@@ -156,23 +157,23 @@ class _HomeWidgetState extends State<HomeWidget> {
                     padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 30),
                     child: Text(
                       'Cash+',
-                      style: FlutterFlowTheme.title3.override(
-                        fontFamily: 'Avenir',
-                        fontSize: 16,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).title3.override(
+                            fontFamily: 'Avenir',
+                            fontSize: 16,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                   Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 10),
                     child: Text(
                       'NOTIFICACIONES',
-                      style: FlutterFlowTheme.title3.override(
-                        fontFamily: 'Avenir',
-                        color: Color(0xFF5603DB),
-                        fontSize: 16,
-                        useGoogleFonts: false,
-                      ),
+                      style: FlutterFlowTheme.of(context).title3.override(
+                            fontFamily: 'Avenir',
+                            color: Color(0xFF5603DB),
+                            fontSize: 16,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                 ],
@@ -194,15 +195,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                           setState(() => switchListTileValue1 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -214,15 +215,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                           setState(() => switchListTileValue2 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -234,15 +235,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                           setState(() => switchListTileValue3 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -254,15 +255,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                           setState(() => switchListTileValue4 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -274,15 +275,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                           setState(() => switchListTileValue5 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -294,15 +295,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                           setState(() => switchListTileValue6 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -314,15 +315,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                           setState(() => switchListTileValue7 = newValue),
                       title: Text(
                         'Notificacion',
-                        style: FlutterFlowTheme.subtitle1.override(
-                          fontFamily: 'Avenir',
-                          color: FlutterFlowTheme.darkBG,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).subtitle1.override(
+                              fontFamily: 'Avenir',
+                              color: FlutterFlowTheme.of(context).darkBG,
+                              useGoogleFonts: false,
+                            ),
                       ),
                       subtitle: Text(
                         'Descripción',
-                        style: FlutterFlowTheme.bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       tileColor: Color(0xFFF5F5F5),
                       dense: false,
@@ -376,7 +377,14 @@ class _HomeWidgetState extends State<HomeWidget> {
                           alignment: AlignmentDirectional(-1, 0),
                           child: InkWell(
                             onTap: () async {
-                              Navigator.pop(context);
+                              await signOut();
+                              await Navigator.pushAndRemoveUntil(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => IntroWidget(),
+                                ),
+                                (r) => false,
+                              );
                             },
                             child: Icon(
                               Icons.arrow_back_rounded,
@@ -410,12 +418,12 @@ class _HomeWidgetState extends State<HomeWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                         child: Text(
                           'Hola',
-                          style: FlutterFlowTheme.title2.override(
-                            fontFamily: 'Avenir',
-                            color: Colors.white,
-                            fontWeight: FontWeight.normal,
-                            useGoogleFonts: false,
-                          ),
+                          style: FlutterFlowTheme.of(context).title2.override(
+                                fontFamily: 'Avenir',
+                                color: Colors.white,
+                                fontWeight: FontWeight.normal,
+                                useGoogleFonts: false,
+                              ),
                         ),
                       ),
                     ],
@@ -425,13 +433,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                     child: AuthUserStreamWidget(
                       child: Text(
                         currentUserDisplayName,
-                        style: FlutterFlowTheme.title1.override(
-                          fontFamily: 'Avenir',
-                          color: Colors.white,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                          useGoogleFonts: false,
-                        ),
+                        style: FlutterFlowTheme.of(context).title1.override(
+                              fontFamily: 'Avenir',
+                              color: Colors.white,
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              useGoogleFonts: false,
+                            ),
                       ),
                     ),
                   ),
@@ -477,13 +485,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     ),
                                   ),
                                 ),
-                                style: FlutterFlowTheme.bodyText2.override(
-                                  fontFamily: 'Avenir',
-                                  color: Color(0xFF1A1F24),
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.normal,
-                                  useGoogleFonts: false,
-                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyText2
+                                    .override(
+                                      fontFamily: 'Avenir',
+                                      color: Color(0xFF1A1F24),
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.normal,
+                                      useGoogleFonts: false,
+                                    ),
                               ),
                             ),
                           ),
@@ -519,13 +529,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 1),
                         child: AutoSizeText(
                           'Mis Checks',
-                          style: FlutterFlowTheme.title1.override(
-                            fontFamily: 'Avenir',
-                            color: Colors.white,
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            useGoogleFonts: false,
-                          ),
+                          style: FlutterFlowTheme.of(context).title1.override(
+                                fontFamily: 'Avenir',
+                                color: Colors.white,
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                                useGoogleFonts: false,
+                              ),
                         ),
                       ),
                     ),
@@ -583,14 +593,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               -0.75, -0.68),
                                           child: AutoSizeText(
                                             'Estándares operativos',
-                                            style: FlutterFlowTheme.title2
+                                            style: FlutterFlowTheme.of(context)
+                                                .title2
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Colors.white,
-                                              fontSize: 20,
-                                              fontWeight: FontWeight.normal,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Colors.white,
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.normal,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                       ],
@@ -618,15 +629,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   .fromSTEB(6, 2, 6, 2),
                                               child: AutoSizeText(
                                                 'Visita estructurada 2022',
-                                                style: FlutterFlowTheme
-                                                    .bodyText2
-                                                    .override(
-                                                  fontFamily: 'Avenir',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                  useGoogleFonts: false,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText2
+                                                        .override(
+                                                          fontFamily: 'Avenir',
+                                                          color: Colors.white,
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                          useGoogleFonts: false,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -648,15 +661,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   .fromSTEB(6, 2, 6, 2),
                                               child: AutoSizeText(
                                                 'Activo',
-                                                style: FlutterFlowTheme
-                                                    .bodyText2
-                                                    .override(
-                                                  fontFamily: 'Avenir',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                  useGoogleFonts: false,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText2
+                                                        .override(
+                                                          fontFamily: 'Avenir',
+                                                          color: Colors.white,
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                          useGoogleFonts: false,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -782,18 +797,21 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                   10, 10),
                                                       child: AutoSizeText(
                                                         'Ver Check',
-                                                        style: FlutterFlowTheme
-                                                            .bodyText2
-                                                            .override(
-                                                          fontFamily:
-                                                              'Montserrat',
-                                                          color:
-                                                              FlutterFlowTheme
-                                                                  .darkBG,
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                              FontWeight.normal,
-                                                        ),
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyText2
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Montserrat',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .darkBG,
+                                                                  fontSize: 14,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .normal,
+                                                                ),
                                                       ),
                                                     ),
                                                     Padding(
@@ -857,14 +875,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               -0.75, -0.68),
                                           child: AutoSizeText(
                                             'CheckList Onboarding',
-                                            style: FlutterFlowTheme.title2
+                                            style: FlutterFlowTheme.of(context)
+                                                .title2
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Colors.white,
-                                              fontSize: 20,
-                                              fontWeight: FontWeight.normal,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Colors.white,
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.normal,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                       ],
@@ -892,15 +911,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   .fromSTEB(6, 2, 6, 2),
                                               child: AutoSizeText(
                                                 'Onboarding',
-                                                style: FlutterFlowTheme
-                                                    .bodyText2
-                                                    .override(
-                                                  fontFamily: 'Avenir',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                  useGoogleFonts: false,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText2
+                                                        .override(
+                                                          fontFamily: 'Avenir',
+                                                          color: Colors.white,
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                          useGoogleFonts: false,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -922,15 +943,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   .fromSTEB(6, 2, 6, 2),
                                               child: AutoSizeText(
                                                 'Activo',
-                                                style: FlutterFlowTheme
-                                                    .bodyText2
-                                                    .override(
-                                                  fontFamily: 'Avenir',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                  useGoogleFonts: false,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText2
+                                                        .override(
+                                                          fontFamily: 'Avenir',
+                                                          color: Colors.white,
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                          useGoogleFonts: false,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -1024,18 +1047,21 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                   10, 10),
                                                       child: AutoSizeText(
                                                         'Ver Check',
-                                                        style: FlutterFlowTheme
-                                                            .bodyText2
-                                                            .override(
-                                                          fontFamily:
-                                                              'Montserrat',
-                                                          color:
-                                                              FlutterFlowTheme
-                                                                  .darkBG,
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                              FontWeight.normal,
-                                                        ),
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyText2
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Montserrat',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .darkBG,
+                                                                  fontSize: 14,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .normal,
+                                                                ),
                                                       ),
                                                     ),
                                                     Padding(
@@ -1099,14 +1125,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               -0.75, -0.68),
                                           child: AutoSizeText(
                                             'Onboarding Corporativo',
-                                            style: FlutterFlowTheme.title2
+                                            style: FlutterFlowTheme.of(context)
+                                                .title2
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Colors.white,
-                                              fontSize: 20,
-                                              fontWeight: FontWeight.normal,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Colors.white,
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.normal,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                       ],
@@ -1134,15 +1161,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   .fromSTEB(6, 2, 6, 2),
                                               child: AutoSizeText(
                                                 'Corporativo',
-                                                style: FlutterFlowTheme
-                                                    .bodyText2
-                                                    .override(
-                                                  fontFamily: 'Avenir',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                  useGoogleFonts: false,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText2
+                                                        .override(
+                                                          fontFamily: 'Avenir',
+                                                          color: Colors.white,
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                          useGoogleFonts: false,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -1164,15 +1193,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   .fromSTEB(6, 2, 6, 2),
                                               child: AutoSizeText(
                                                 'No Activo',
-                                                style: FlutterFlowTheme
-                                                    .bodyText2
-                                                    .override(
-                                                  fontFamily: 'Avenir',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                  useGoogleFonts: false,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText2
+                                                        .override(
+                                                          fontFamily: 'Avenir',
+                                                          color: Colors.white,
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                          useGoogleFonts: false,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -1270,17 +1301,21 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                 30, 10, 10, 10),
                                                     child: AutoSizeText(
                                                       'Ver Check',
-                                                      style: FlutterFlowTheme
-                                                          .bodyText2
-                                                          .override(
-                                                        fontFamily:
-                                                            'Montserrat',
-                                                        color: FlutterFlowTheme
-                                                            .darkBG,
-                                                        fontSize: 14,
-                                                        fontWeight:
-                                                            FontWeight.normal,
-                                                      ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyText2
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Montserrat',
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .darkBG,
+                                                                fontSize: 14,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
                                                     ),
                                                   ),
                                                   Padding(
@@ -1342,14 +1377,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               -0.75, -0.68),
                                           child: AutoSizeText(
                                             'Check HR Operaciones',
-                                            style: FlutterFlowTheme.title2
+                                            style: FlutterFlowTheme.of(context)
+                                                .title2
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Colors.white,
-                                              fontSize: 20,
-                                              fontWeight: FontWeight.normal,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Colors.white,
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.normal,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                       ],
@@ -1377,15 +1413,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   .fromSTEB(6, 2, 6, 2),
                                               child: AutoSizeText(
                                                 'Visitas a Tiendas',
-                                                style: FlutterFlowTheme
-                                                    .bodyText2
-                                                    .override(
-                                                  fontFamily: 'Avenir',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                  useGoogleFonts: false,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText2
+                                                        .override(
+                                                          fontFamily: 'Avenir',
+                                                          color: Colors.white,
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                          useGoogleFonts: false,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -1407,15 +1445,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   .fromSTEB(6, 2, 6, 2),
                                               child: AutoSizeText(
                                                 'No Activo',
-                                                style: FlutterFlowTheme
-                                                    .bodyText2
-                                                    .override(
-                                                  fontFamily: 'Avenir',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                  useGoogleFonts: false,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText2
+                                                        .override(
+                                                          fontFamily: 'Avenir',
+                                                          color: Colors.white,
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                          useGoogleFonts: false,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -1497,17 +1537,21 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                 30, 10, 10, 10),
                                                     child: AutoSizeText(
                                                       'Ver Check',
-                                                      style: FlutterFlowTheme
-                                                          .bodyText2
-                                                          .override(
-                                                        fontFamily:
-                                                            'Montserrat',
-                                                        color: FlutterFlowTheme
-                                                            .darkBG,
-                                                        fontSize: 14,
-                                                        fontWeight:
-                                                            FontWeight.normal,
-                                                      ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyText2
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Montserrat',
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .darkBG,
+                                                                fontSize: 14,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
                                                     ),
                                                   ),
                                                   Padding(
@@ -1569,14 +1613,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               -0.75, -0.68),
                                           child: AutoSizeText(
                                             'Check List-Friedman',
-                                            style: FlutterFlowTheme.title2
+                                            style: FlutterFlowTheme.of(context)
+                                                .title2
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Colors.white,
-                                              fontSize: 20,
-                                              fontWeight: FontWeight.normal,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Colors.white,
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.normal,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                       ],
@@ -1604,15 +1649,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   .fromSTEB(6, 2, 6, 2),
                                               child: AutoSizeText(
                                                 'Friedman',
-                                                style: FlutterFlowTheme
-                                                    .bodyText2
-                                                    .override(
-                                                  fontFamily: 'Avenir',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                  useGoogleFonts: false,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText2
+                                                        .override(
+                                                          fontFamily: 'Avenir',
+                                                          color: Colors.white,
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                          useGoogleFonts: false,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -1634,15 +1681,17 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   .fromSTEB(6, 2, 6, 2),
                                               child: AutoSizeText(
                                                 'No Activo',
-                                                style: FlutterFlowTheme
-                                                    .bodyText2
-                                                    .override(
-                                                  fontFamily: 'Avenir',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                  useGoogleFonts: false,
-                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText2
+                                                        .override(
+                                                          fontFamily: 'Avenir',
+                                                          color: Colors.white,
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                          useGoogleFonts: false,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -1724,17 +1773,21 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                 30, 10, 10, 10),
                                                     child: AutoSizeText(
                                                       'Ver Check',
-                                                      style: FlutterFlowTheme
-                                                          .bodyText2
-                                                          .override(
-                                                        fontFamily:
-                                                            'Montserrat',
-                                                        color: FlutterFlowTheme
-                                                            .darkBG,
-                                                        fontSize: 14,
-                                                        fontWeight:
-                                                            FontWeight.normal,
-                                                      ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyText2
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Montserrat',
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .darkBG,
+                                                                fontSize: 14,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
                                                     ),
                                                   ),
                                                   Padding(

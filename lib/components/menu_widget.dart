@@ -134,14 +134,15 @@ class _MenuWidgetState extends State<MenuWidget> {
                                           },
                                           child: Text(
                                             'Mi Perfil',
-                                            style: FlutterFlowTheme.bodyText1
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Color(0xFF5603DB),
-                                              fontSize: 24,
-                                              fontWeight: FontWeight.w600,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Color(0xFF5603DB),
+                                                  fontSize: 24,
+                                                  fontWeight: FontWeight.w600,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                       ),
@@ -164,14 +165,15 @@ class _MenuWidgetState extends State<MenuWidget> {
                                           },
                                           child: Text(
                                             'Agendar Checks',
-                                            style: FlutterFlowTheme.bodyText1
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Color(0xFF5603DB),
-                                              fontSize: 24,
-                                              fontWeight: FontWeight.w600,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Color(0xFF5603DB),
+                                                  fontSize: 24,
+                                                  fontWeight: FontWeight.w600,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                       ),
@@ -194,14 +196,15 @@ class _MenuWidgetState extends State<MenuWidget> {
                                           },
                                           child: Text(
                                             'Crear un Check',
-                                            style: FlutterFlowTheme.bodyText1
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Color(0xFF5603DB),
-                                              fontSize: 24,
-                                              fontWeight: FontWeight.w600,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Color(0xFF5603DB),
+                                                  fontSize: 24,
+                                                  fontWeight: FontWeight.w600,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                       ),
@@ -224,14 +227,15 @@ class _MenuWidgetState extends State<MenuWidget> {
                                           },
                                           child: Text(
                                             'Crear una Tarea',
-                                            style: FlutterFlowTheme.bodyText1
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Color(0xFF5603DB),
-                                              fontSize: 24,
-                                              fontWeight: FontWeight.w600,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Color(0xFF5603DB),
+                                                  fontSize: 24,
+                                                  fontWeight: FontWeight.w600,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                       ),
@@ -244,14 +248,15 @@ class _MenuWidgetState extends State<MenuWidget> {
                                             0, 0, 0, 10),
                                         child: Text(
                                           'Cash +',
-                                          style: FlutterFlowTheme.bodyText1
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
                                               .override(
-                                            fontFamily: 'Avenir',
-                                            color: Color(0xFF5603DB),
-                                            fontSize: 24,
-                                            fontWeight: FontWeight.w600,
-                                            useGoogleFonts: false,
-                                          ),
+                                                fontFamily: 'Avenir',
+                                                color: Color(0xFF5603DB),
+                                                fontSize: 24,
+                                                fontWeight: FontWeight.w600,
+                                                useGoogleFonts: false,
+                                              ),
                                         ),
                                       ),
                                     ),
@@ -273,14 +278,15 @@ class _MenuWidgetState extends State<MenuWidget> {
                                           },
                                           child: Text(
                                             'Ajustes',
-                                            style: FlutterFlowTheme.bodyText1
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
                                                 .override(
-                                              fontFamily: 'Avenir',
-                                              color: Color(0xFF5603DB),
-                                              fontSize: 24,
-                                              fontWeight: FontWeight.w600,
-                                              useGoogleFonts: false,
-                                            ),
+                                                  fontFamily: 'Avenir',
+                                                  color: Color(0xFF5603DB),
+                                                  fontSize: 24,
+                                                  fontWeight: FontWeight.w600,
+                                                  useGoogleFonts: false,
+                                                ),
                                           ),
                                         ),
                                       ),

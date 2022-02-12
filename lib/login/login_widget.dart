@@ -96,11 +96,13 @@ class _LoginWidgetState extends State<LoginWidget> {
                                   EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                               child: AutoSizeText(
                                 'Login',
-                                style: FlutterFlowTheme.title1.override(
-                                  fontFamily: 'Avenir',
-                                  color: FlutterFlowTheme.white,
-                                  useGoogleFonts: false,
-                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .title1
+                                    .override(
+                                      fontFamily: 'Avenir',
+                                      color: FlutterFlowTheme.of(context).white,
+                                      useGoogleFonts: false,
+                                    ),
                               ),
                             ),
                           ),
@@ -113,11 +115,12 @@ class _LoginWidgetState extends State<LoginWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                         child: Text(
                           'Ingresa tu usuario y contraseña',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Avenir',
-                            color: FlutterFlowTheme.white,
-                            useGoogleFonts: false,
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).bodyText1.override(
+                                    fontFamily: 'Avenir',
+                                    color: FlutterFlowTheme.of(context).white,
+                                    useGoogleFonts: false,
+                                  ),
                         ),
                       ),
                     ),
@@ -127,11 +130,12 @@ class _LoginWidgetState extends State<LoginWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
                         child: Text(
                           'Usuario',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Avenir',
-                            color: FlutterFlowTheme.white,
-                            useGoogleFonts: false,
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).bodyText1.override(
+                                    fontFamily: 'Avenir',
+                                    color: FlutterFlowTheme.of(context).white,
+                                    useGoogleFonts: false,
+                                  ),
                         ),
                       ),
                     ),
@@ -147,17 +151,21 @@ class _LoginWidgetState extends State<LoginWidget> {
                               obscureText: false,
                               decoration: InputDecoration(
                                 labelText: 'Email Address',
-                                labelStyle: FlutterFlowTheme.bodyText1.override(
-                                  fontFamily: 'Avenir',
-                                  color: Color(0xFF95A1AC),
-                                  useGoogleFonts: false,
-                                ),
+                                labelStyle: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Avenir',
+                                      color: Color(0xFF95A1AC),
+                                      useGoogleFonts: false,
+                                    ),
                                 hintText: 'Enter your email here...',
-                                hintStyle: FlutterFlowTheme.bodyText1.override(
-                                  fontFamily: 'Avenir',
-                                  color: Color(0xFF95A1AC),
-                                  useGoogleFonts: false,
-                                ),
+                                hintStyle: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Avenir',
+                                      color: Color(0xFF95A1AC),
+                                      useGoogleFonts: false,
+                                    ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0xFFDBE2E7),
@@ -173,15 +181,17 @@ class _LoginWidgetState extends State<LoginWidget> {
                                   borderRadius: BorderRadius.circular(12),
                                 ),
                                 filled: true,
-                                fillColor: FlutterFlowTheme.white,
+                                fillColor: FlutterFlowTheme.of(context).white,
                                 contentPadding: EdgeInsetsDirectional.fromSTEB(
                                     16, 24, 0, 24),
                               ),
-                              style: FlutterFlowTheme.bodyText1.override(
-                                fontFamily: 'Avenir',
-                                color: Color(0xFF2B343A),
-                                useGoogleFonts: false,
-                              ),
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyText1
+                                  .override(
+                                    fontFamily: 'Avenir',
+                                    color: Color(0xFF2B343A),
+                                    useGoogleFonts: false,
+                                  ),
                             ),
                           ),
                         ],
@@ -193,11 +203,12 @@ class _LoginWidgetState extends State<LoginWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                         child: Text(
                           'Contraseña',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Avenir',
-                            color: FlutterFlowTheme.white,
-                            useGoogleFonts: false,
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).bodyText1.override(
+                                    fontFamily: 'Avenir',
+                                    color: FlutterFlowTheme.of(context).white,
+                                    useGoogleFonts: false,
+                                  ),
                         ),
                       ),
                     ),
@@ -213,17 +224,21 @@ class _LoginWidgetState extends State<LoginWidget> {
                               obscureText: !passwordVisibility,
                               decoration: InputDecoration(
                                 labelText: 'Password',
-                                labelStyle: FlutterFlowTheme.bodyText1.override(
-                                  fontFamily: 'Avenir',
-                                  color: Color(0xFF95A1AC),
-                                  useGoogleFonts: false,
-                                ),
+                                labelStyle: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Avenir',
+                                      color: Color(0xFF95A1AC),
+                                      useGoogleFonts: false,
+                                    ),
                                 hintText: 'Enter your password here...',
-                                hintStyle: FlutterFlowTheme.bodyText1.override(
-                                  fontFamily: 'Avenir',
-                                  color: Color(0xFF95A1AC),
-                                  useGoogleFonts: false,
-                                ),
+                                hintStyle: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Avenir',
+                                      color: Color(0xFF95A1AC),
+                                      useGoogleFonts: false,
+                                    ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0xFFDBE2E7),
@@ -239,7 +254,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                   borderRadius: BorderRadius.circular(12),
                                 ),
                                 filled: true,
-                                fillColor: FlutterFlowTheme.white,
+                                fillColor: FlutterFlowTheme.of(context).white,
                                 contentPadding: EdgeInsetsDirectional.fromSTEB(
                                     16, 24, 0, 24),
                                 suffixIcon: InkWell(
@@ -256,11 +271,13 @@ class _LoginWidgetState extends State<LoginWidget> {
                                   ),
                                 ),
                               ),
-                              style: FlutterFlowTheme.bodyText1.override(
-                                fontFamily: 'Avenir',
-                                color: Color(0xFF2B343A),
-                                useGoogleFonts: false,
-                              ),
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyText1
+                                  .override(
+                                    fontFamily: 'Avenir',
+                                    color: Color(0xFF2B343A),
+                                    useGoogleFonts: false,
+                                  ),
                             ),
                           ),
                         ],
@@ -291,12 +308,13 @@ class _LoginWidgetState extends State<LoginWidget> {
                         options: FFButtonOptions(
                           width: double.infinity,
                           height: 70,
-                          color: FlutterFlowTheme.white,
-                          textStyle: FlutterFlowTheme.title3.override(
-                            fontFamily: 'Avenir',
-                            color: Color(0xFF5807D3),
-                            useGoogleFonts: false,
-                          ),
+                          color: FlutterFlowTheme.of(context).white,
+                          textStyle:
+                              FlutterFlowTheme.of(context).title3.override(
+                                    fontFamily: 'Avenir',
+                                    color: Color(0xFF5807D3),
+                                    useGoogleFonts: false,
+                                  ),
                           elevation: 0,
                           borderSide: BorderSide(
                             color: Colors.transparent,
@@ -312,11 +330,12 @@ class _LoginWidgetState extends State<LoginWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                         child: Text(
                           '¿No tienes  una cuenta? ',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Avenir',
-                            color: FlutterFlowTheme.white,
-                            useGoogleFonts: false,
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).bodyText1.override(
+                                    fontFamily: 'Avenir',
+                                    color: FlutterFlowTheme.of(context).white,
+                                    useGoogleFonts: false,
+                                  ),
                         ),
                       ),
                     ),
@@ -335,12 +354,13 @@ class _LoginWidgetState extends State<LoginWidget> {
                           },
                           child: Text(
                             'CREAR CUENTA',
-                            style: FlutterFlowTheme.bodyText1.override(
-                              fontFamily: 'Avenir',
-                              color: FlutterFlowTheme.white,
-                              fontWeight: FontWeight.bold,
-                              useGoogleFonts: false,
-                            ),
+                            style:
+                                FlutterFlowTheme.of(context).bodyText1.override(
+                                      fontFamily: 'Avenir',
+                                      color: FlutterFlowTheme.of(context).white,
+                                      fontWeight: FontWeight.bold,
+                                      useGoogleFonts: false,
+                                    ),
                           ),
                         ),
                       ),
