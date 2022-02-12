@@ -60,21 +60,11 @@ class _LoginWidgetState extends State<LoginWidget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    InkWell(
-                      onTap: () async {
-                        await Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => HomeWidget(),
-                          ),
-                        );
-                      },
-                      child: Image.asset(
-                        'assets/images/Group_394.png',
-                        width: MediaQuery.of(context).size.width,
-                        height: 100,
-                        fit: BoxFit.contain,
-                      ),
+                    Image.asset(
+                      'assets/images/Group_394.png',
+                      width: MediaQuery.of(context).size.width,
+                      height: 100,
+                      fit: BoxFit.contain,
                     ),
                   ],
                 ),

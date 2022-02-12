@@ -7,7 +7,7 @@ import 'auth/auth_util.dart';
 
 import 'flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/internationalization.dart';
-import 'package:checklist/intro/intro_widget.dart';
+import 'package:checklist/login/login_widget.dart';
 import 'package:checklist/home/home_widget.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
@@ -86,7 +86,7 @@ class _MyAppState extends State<MyApp> {
             )
           : currentUser.loggedIn
               ? HomeWidget()
-              : IntroWidget(),
+              : LoginWidget(),
     );
   }
 }

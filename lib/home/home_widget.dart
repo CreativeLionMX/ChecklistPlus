@@ -4,7 +4,7 @@ import '../flujo/flujo_widget.dart';
 import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
-import '../intro/intro_widget.dart';
+import '../login/login_widget.dart';
 import '../perfil/perfil_widget.dart';
 import '../tarea/tarea_widget.dart';
 import '../visita_estructurada2022_estandares_operativos1de4/visita_estructurada2022_estandares_operativos1de4_widget.dart';
@@ -381,7 +381,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                               await Navigator.pushAndRemoveUntil(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => IntroWidget(),
+                                  builder: (context) => LoginWidget(),
                                 ),
                                 (r) => false,
                               );
@@ -430,17 +430,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                   ),
                   Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
-                    child: AuthUserStreamWidget(
-                      child: Text(
-                        currentUserDisplayName,
-                        style: FlutterFlowTheme.of(context).title1.override(
-                              fontFamily: 'Avenir',
-                              color: Colors.white,
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold,
-                              useGoogleFonts: false,
-                            ),
-                      ),
+                    child: Text(
+                      currentUserEmail,
+                      style: FlutterFlowTheme.of(context).title1.override(
+                            fontFamily: 'Avenir',
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                            useGoogleFonts: false,
+                          ),
                     ),
                   ),
                   Padding(
