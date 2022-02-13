@@ -45,6 +45,9 @@ abstract class ChecksRecord
   String get phoneNumber;
 
   @nullable
+  DocumentReference get user;
+
+  @nullable
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference get reference;
 
@@ -88,6 +91,7 @@ Map<String, dynamic> createChecksRecordData({
   String uid,
   DateTime createdTime,
   String phoneNumber,
+  DocumentReference user,
 }) =>
     serializers.toFirestore(
         ChecksRecord.serializer,
@@ -100,4 +104,5 @@ Map<String, dynamic> createChecksRecordData({
           ..photoUrl = photoUrl
           ..uid = uid
           ..createdTime = createdTime
-          ..phoneNumber = phoneNumber));
+          ..phoneNumber = phoneNumber
+          ..user = user));

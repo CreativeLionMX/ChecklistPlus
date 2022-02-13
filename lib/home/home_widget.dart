@@ -1,5 +1,6 @@
 import '../auth/auth_util.dart';
 import '../check_list_onboarding1de4/check_list_onboarding1de4_widget.dart';
+import '../checklisttest/checklisttest_widget.dart';
 import '../flujo/flujo_widget.dart';
 import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
@@ -7,7 +8,6 @@ import '../flutter_flow/flutter_flow_util.dart';
 import '../login/login_widget.dart';
 import '../perfil/perfil_widget.dart';
 import '../tarea/tarea_widget.dart';
-import '../visita_estructurada2022_estandares_operativos1de4/visita_estructurada2022_estandares_operativos1de4_widget.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
@@ -777,7 +777,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   context,
                                                   MaterialPageRoute(
                                                     builder: (context) =>
-                                                        VisitaEstructurada2022EstandaresOperativos1de4Widget(),
+                                                        ChecklisttestWidget(),
                                                   ),
                                                 );
                                               },

@@ -50,6 +50,20 @@ abstract class TareasRecord
   String get phoneNumber;
 
   @nullable
+  DocumentReference get user;
+
+  @nullable
+  @BuiltValueField(wireName: 'yes_no')
+  bool get yesNo;
+
+  @nullable
+  String get respuesta;
+
+  @nullable
+  @BuiltValueField(wireName: 'desc_pregunta')
+  String get descPregunta;
+
+  @nullable
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference get reference;
 
@@ -62,7 +76,10 @@ abstract class TareasRecord
     ..displayName = ''
     ..photoUrl = ''
     ..uid = ''
-    ..phoneNumber = '';
+    ..phoneNumber = ''
+    ..yesNo = false
+    ..respuesta = ''
+    ..descPregunta = '';
 
   static CollectionReference get collection =>
       FirebaseFirestore.instance.collection('tareas');
@@ -94,6 +111,10 @@ Map<String, dynamic> createTareasRecordData({
   String uid,
   DateTime createdTime,
   String phoneNumber,
+  DocumentReference user,
+  bool yesNo,
+  String respuesta,
+  String descPregunta,
 }) =>
     serializers.toFirestore(
         TareasRecord.serializer,
@@ -108,4 +129,8 @@ Map<String, dynamic> createTareasRecordData({
           ..photoUrl = photoUrl
           ..uid = uid
           ..createdTime = createdTime
-          ..phoneNumber = phoneNumber));
+          ..phoneNumber = phoneNumber
+          ..user = user
+          ..yesNo = yesNo
+          ..respuesta = respuesta
+          ..descPregunta = descPregunta));

@@ -54,6 +54,9 @@ abstract class PlanAccionRecord
   String get phoneNumber;
 
   @nullable
+  DocumentReference get user;
+
+  @nullable
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference get reference;
 
@@ -102,6 +105,7 @@ Map<String, dynamic> createPlanAccionRecordData({
   String uid,
   DateTime createdTime,
   String phoneNumber,
+  DocumentReference user,
 }) =>
     serializers.toFirestore(
         PlanAccionRecord.serializer,
@@ -116,4 +120,5 @@ Map<String, dynamic> createPlanAccionRecordData({
           ..photoUrl = photoUrl
           ..uid = uid
           ..createdTime = createdTime
-          ..phoneNumber = phoneNumber));
+          ..phoneNumber = phoneNumber
+          ..user = user));
