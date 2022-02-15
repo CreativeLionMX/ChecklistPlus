@@ -8,6 +8,7 @@ import 'schema/users_record.dart';
 import 'schema/tareas_record.dart';
 import 'schema/checks_record.dart';
 import 'schema/plan_accion_record.dart';
+import 'schema/respuestas_estandares_record.dart';
 import 'schema/serializers.dart';
 
 export 'package:cloud_firestore/cloud_firestore.dart';
@@ -18,6 +19,7 @@ export 'schema/users_record.dart';
 export 'schema/tareas_record.dart';
 export 'schema/checks_record.dart';
 export 'schema/plan_accion_record.dart';
+export 'schema/respuestas_estandares_record.dart';
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Stream<List<UsersRecord>> queryUsersRecord(
@@ -78,6 +80,23 @@ Future<List<PlanAccionRecord>> queryPlanAccionRecordOnce(
         bool singleRecord = false}) =>
     queryCollectionOnce(
         PlanAccionRecord.collection, PlanAccionRecord.serializer,
+        queryBuilder: queryBuilder, limit: limit, singleRecord: singleRecord);
+
+/// Functions to query RespuestasEstandaresRecords (as a Stream and as a Future).
+Stream<List<RespuestasEstandaresRecord>> queryRespuestasEstandaresRecord(
+        {Query Function(Query) queryBuilder,
+        int limit = -1,
+        bool singleRecord = false}) =>
+    queryCollection(RespuestasEstandaresRecord.collection,
+        RespuestasEstandaresRecord.serializer,
+        queryBuilder: queryBuilder, limit: limit, singleRecord: singleRecord);
+
+Future<List<RespuestasEstandaresRecord>> queryRespuestasEstandaresRecordOnce(
+        {Query Function(Query) queryBuilder,
+        int limit = -1,
+        bool singleRecord = false}) =>
+    queryCollectionOnce(RespuestasEstandaresRecord.collection,
+        RespuestasEstandaresRecord.serializer,
         queryBuilder: queryBuilder, limit: limit, singleRecord: singleRecord);
 
 Stream<List<T>> queryCollection<T>(

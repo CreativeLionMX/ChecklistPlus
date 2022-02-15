@@ -27,6 +27,8 @@ class _VisitaEstructurada2022EstandaresOperativos1de4WidgetState
     extends State<VisitaEstructurada2022EstandaresOperativos1de4Widget> {
   String uploadedFileUrl1 = '';
   String uploadedFileUrl2 = '';
+  String uploadedFileUrl3 = '';
+  String uploadedFileUrl4 = '';
   final scaffoldKey = GlobalKey<ScaffoldState>();
   bool switchListTileValue1;
   bool switchListTileValue2;
@@ -1206,31 +1208,93 @@ class _VisitaEstructurada2022EstandaresOperativos1de4WidgetState
                                           Align(
                                             alignment: AlignmentDirectional(
                                                 -0.89, -0.6),
-                                            child: Text(
-                                              'Plan de Acción',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Nunito',
-                                                        color:
-                                                            Color(0xFFFDFDFD),
-                                                      ),
+                                            child: InkWell(
+                                              onTap: () async {
+                                                await showModalBottomSheet(
+                                                  isScrollControlled: true,
+                                                  backgroundColor:
+                                                      Colors.transparent,
+                                                  context: context,
+                                                  builder: (context) {
+                                                    return Padding(
+                                                      padding:
+                                                          MediaQuery.of(context)
+                                                              .viewInsets,
+                                                      child:
+                                                          PlandeaccionWidget(),
+                                                    );
+                                                  },
+                                                );
+                                              },
+                                              child: Text(
+                                                'Plan de Acción',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Nunito',
+                                                          color:
+                                                              Color(0xFFFDFDFD),
+                                                        ),
+                                              ),
                                             ),
                                           ),
                                           Align(
                                             alignment: AlignmentDirectional(
                                                 0.06, -0.6),
-                                            child: Text(
-                                              'Multimedia',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Nunito',
-                                                        color:
-                                                            Color(0xFFFDFDFD),
-                                                      ),
+                                            child: InkWell(
+                                              onTap: () async {
+                                                final selectedMedia =
+                                                    await selectMediaWithSourceBottomSheet(
+                                                  context: context,
+                                                  allowPhoto: true,
+                                                  allowVideo: true,
+                                                );
+                                                if (selectedMedia != null &&
+                                                    validateFileFormat(
+                                                        selectedMedia
+                                                            .storagePath,
+                                                        context)) {
+                                                  showUploadMessage(
+                                                    context,
+                                                    'Uploading file...',
+                                                    showLoading: true,
+                                                  );
+                                                  final downloadUrl =
+                                                      await uploadData(
+                                                          selectedMedia
+                                                              .storagePath,
+                                                          selectedMedia.bytes);
+                                                  ScaffoldMessenger.of(context)
+                                                      .hideCurrentSnackBar();
+                                                  if (downloadUrl != null) {
+                                                    setState(() =>
+                                                        uploadedFileUrl3 =
+                                                            downloadUrl);
+                                                    showUploadMessage(
+                                                      context,
+                                                      'Success!',
+                                                    );
+                                                  } else {
+                                                    showUploadMessage(
+                                                      context,
+                                                      'Failed to upload media',
+                                                    );
+                                                    return;
+                                                  }
+                                                }
+                                              },
+                                              child: Text(
+                                                'Multimedia',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Nunito',
+                                                          color:
+                                                              Color(0xFFFDFDFD),
+                                                        ),
+                                              ),
                                             ),
                                           ),
                                           Align(
@@ -1261,23 +1325,85 @@ class _VisitaEstructurada2022EstandaresOperativos1de4WidgetState
                                           Align(
                                             alignment: AlignmentDirectional(
                                                 -0.67, 0.53),
-                                            child: Icon(
-                                              Icons.check_circle_outlined,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .white,
-                                              size: 24,
+                                            child: InkWell(
+                                              onTap: () async {
+                                                await showModalBottomSheet(
+                                                  isScrollControlled: true,
+                                                  backgroundColor:
+                                                      Colors.transparent,
+                                                  context: context,
+                                                  builder: (context) {
+                                                    return Padding(
+                                                      padding:
+                                                          MediaQuery.of(context)
+                                                              .viewInsets,
+                                                      child:
+                                                          PlandeaccionWidget(),
+                                                    );
+                                                  },
+                                                );
+                                              },
+                                              child: Icon(
+                                                Icons.check_circle_outlined,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .white,
+                                                size: 24,
+                                              ),
                                             ),
                                           ),
                                           Align(
                                             alignment: AlignmentDirectional(
                                                 0.05, 0.44),
-                                            child: Icon(
-                                              Icons.perm_media_outlined,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .white,
-                                              size: 24,
+                                            child: InkWell(
+                                              onTap: () async {
+                                                final selectedMedia =
+                                                    await selectMediaWithSourceBottomSheet(
+                                                  context: context,
+                                                  allowPhoto: true,
+                                                  allowVideo: true,
+                                                );
+                                                if (selectedMedia != null &&
+                                                    validateFileFormat(
+                                                        selectedMedia
+                                                            .storagePath,
+                                                        context)) {
+                                                  showUploadMessage(
+                                                    context,
+                                                    'Uploading file...',
+                                                    showLoading: true,
+                                                  );
+                                                  final downloadUrl =
+                                                      await uploadData(
+                                                          selectedMedia
+                                                              .storagePath,
+                                                          selectedMedia.bytes);
+                                                  ScaffoldMessenger.of(context)
+                                                      .hideCurrentSnackBar();
+                                                  if (downloadUrl != null) {
+                                                    setState(() =>
+                                                        uploadedFileUrl4 =
+                                                            downloadUrl);
+                                                    showUploadMessage(
+                                                      context,
+                                                      'Success!',
+                                                    );
+                                                  } else {
+                                                    showUploadMessage(
+                                                      context,
+                                                      'Failed to upload media',
+                                                    );
+                                                    return;
+                                                  }
+                                                }
+                                              },
+                                              child: Icon(
+                                                Icons.perm_media_outlined,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .white,
+                                                size: 24,
+                                              ),
                                             ),
                                           ),
                                           Align(

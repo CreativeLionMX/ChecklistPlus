@@ -4,6 +4,7 @@ import 'users_record.dart';
 import 'tareas_record.dart';
 import 'checks_record.dart';
 import 'plan_accion_record.dart';
+import 'respuestas_estandares_record.dart';
 
 import 'index.dart';
 
@@ -18,6 +19,7 @@ const kDocumentReferenceField = 'Document__Reference__Field';
   TareasRecord,
   ChecksRecord,
   PlanAccionRecord,
+  RespuestasEstandaresRecord,
 ])
 final Serializers serializers = (_$serializers.toBuilder()
       ..add(DocumentReferenceSerializer())
